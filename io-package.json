@@ -1,0 +1,106 @@
+{
+	"common": {
+		"name": "bidirectional-counter",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Bidirectional counter",
+		"titleLang": {
+			"en": "Bidirectional counter",
+			"de": "Bidirektionaler Zähler",
+			"ru": "Двунаправленный счетчик",
+			"pt": "Contador bidirecional",
+			"nl": "Bidirectionele teller",
+			"fr": "Compteur bidirectionnel",
+			"it": "Contatore bidirezionale",
+			"es": "Contador bidireccional",
+			"pl": "Licznik dwukierunkowy",
+			"zh-cn": "双向计数器"
+		},
+		"desc": {
+			"en": "Counter to separate consumption (positive changes) and deliverd (negative changes)",
+			"de": "Zähler zum separaten Verbrauch (positive Änderungen) und geliefert (negative Änderungen)",
+			"ru": "Счетчик раздельного потребления (положительные изменения) и поставки (отрицательные изменения)",
+			"pt": "Contador para separar o consumo (mudanças positivas) e entregue (mudanças negativas)",
+			"nl": "Teller om verbruik (positieve veranderingen) en afgeleverde (negatieve veranderingen) te scheiden",
+			"fr": "Compteur pour séparer la consommation (variations positives) et la livraison (variations négatives)",
+			"it": "Contatore per separare i consumi (variazioni positive) e erogati (variazioni negative)",
+			"es": "Contador para separar el consumo (cambios positivos) y entregado (cambios negativos)",
+			"pl": "Licznik do oddzielnego zużycia (zmiany dodatnie) i dostarczonego (zmiany ujemne)",
+			"zh-cn": "反对单独消费（积极变化）和交付（消极变化）"
+		},
+		"authors": [
+			"BenAhrdt <bsahrdt@gmail.com>"
+		],
+		"keywords": [
+			"bidirectional",
+			"Bidirektional",
+			"Consumed",
+			"Bezogen",
+			"delivered",
+			"Geliefert",
+			"counter",
+			"Zähler"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "bidirectional-counter.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/BenAhrdt/ioBroker.bidirectional-counter/main/admin/bidirectional-counter.png",
+		"readme": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "energy",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

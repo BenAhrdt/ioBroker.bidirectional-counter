@@ -1,0 +1,50 @@
+{
+	"cli": true,
+	"target": "directory",
+	"adapterName": "bidirectional-counter",
+	"title": "Bidirectional counter",
+	"description": "Counter to separate consumption (positive changes) and deliverd (negative changes)",
+	"keywords": [
+		"bidirectional",
+		"Bidirektional",
+		"Consumed",
+		"Bezogen",
+		"delivered",
+		"Geliefert",
+		"counter",
+		"Zähler"
+	],
+	"expert": "yes",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [
+		"custom"
+	],
+	"type": "energy",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"language": "JavaScript",
+	"adminReact": "no",
+	"tools": [
+		"ESLint",
+		"type checking"
+	],
+	"i18n": "words.js",
+	"releaseScript": "yes",
+	"devServer": "no",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "yes",
+	"authorName": "BenAhrdt",
+	"authorGithub": "BenAhrdt",
+	"authorEmail": "bsahrdt@gmail.com",
+	"gitRemoteProtocol": "HTTPS",
+	"gitCommit": "yes",
+	"defaultBranch": "main",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"creatorVersion": "2.1.0"
+}
