@@ -196,7 +196,10 @@ class BidirectionalCounter extends utils.Adapter {
 				}
 			}
 		}
-		this.delObjectAsync(this.createStatestring(id));
+		// Delete channel Object
+		if(this.config.deleteStatesWithDisable){
+			this.delObjectAsync(this.createStatestring(id));
+		}
 
 		// delete active State in array
 		if(this.activeStates[id])

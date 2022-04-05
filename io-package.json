@@ -1,7 +1,7 @@
 {
 	"common": {
 		"name": "bidirectional-counter",
-		"version": "1.3.1",
+		"version": "1.4.1",
 		"news": {
 			"0.0.1": {
 				"en": "initial release",
