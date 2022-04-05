@@ -7,6 +7,7 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
+const { statSync } = require("fs");
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -23,9 +24,22 @@ class BidirectionalCounter extends utils.Adapter {
 		});
 		this.on("ready", this.onReady.bind(this));
 		this.on("stateChange", this.onStateChange.bind(this));
-		// this.on("objectChange", this.onObjectChange.bind(this));
+		this.on("objectChange", this.onObjectChange.bind(this));
 		// this.on("message", this.onMessage.bind(this));
 		this.on("unload", this.onUnload.bind(this));
+
+		this.subscribecounterId = "info.subscribedStatesCount";
+		this.subscribecounter = 0;
+
+		this.additionalIds = {
+			consumed : ".consumed",
+			delivered : ".delivered",
+			total : ".total"
+		};
+
+		// define arrays for selected states and calculation
+		this.activeStates = {};
+		this.activeStatesLastAdditionalValues = {};
 	}
 
 	/**
@@ -33,59 +47,50 @@ class BidirectionalCounter extends utils.Adapter {
 	 */
 	async onReady() {
 		// Initialize your adapter here
-
 		// Reset the connection indicator during startup
 		this.setState("info.connection", false, true);
-
-		// The adapters config (in the instance object everything under the attribute "native") is accessible via
-		// this.config:
-		this.log.info("config option1: " + this.config.option1);
-		this.log.info("config option2: " + this.config.option2);
-
-		/*
-		For every state in the system there has to be also an object of type state
-		Here a simple template for a boolean variable named "testVariable"
-		Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
-		*/
-		await this.setObjectNotExistsAsync("testVariable", {
+		
+		// Creates the subscribed state count
+		await this.setObjectNotExistsAsync(this.subscribecounterId, {
 			type: "state",
 			common: {
-				name: "testVariable",
-				type: "boolean",
+				name: "Count of subscribed states",
+				type: "number",
 				role: "indicator",
 				read: true,
-				write: true,
+				write: false,
+				def:0
 			},
 			native: {},
 		});
 
-		// In order to get state updates, you need to subscribe to them. The following line adds a subscription for our variable we have created above.
-		this.subscribeStates("testVariable");
-		// You can also add a subscription for multiple states. The following line watches all states starting with "lights."
-		// this.subscribeStates("lights.*");
-		// Or, if you really must, you can also watch all states. Don't do this if you don't need to. Otherwise this will cause a lot of unnecessary load on the system:
-		// this.subscribeStates("*");
+		//Read all states with custom configuration
+		const customStateArray = await this.getObjectViewAsync("system","custom",{});
 
-		/*
-			setState examples
-			you will notice that each setState will cause the stateChange event to fire (because of above subscribeStates cmd)
-		*/
-		// the variable testVariable is set to true as command (ack=false)
-		await this.setStateAsync("testVariable", true);
+		// Request if there is an object
+		if(customStateArray && customStateArray.rows)
+		{
+			for(let index = 0 ; index < customStateArray.rows.length ; index++){
+				if(customStateArray.rows[index].value !== null){
+					// Request if there is an object for this namespace an its enabled
+					if (customStateArray.rows[index].value[this.namespace] && customStateArray.rows[index].value[this.namespace].enabled === true) {
+						const id = customStateArray.rows[index].id;
+						const obj = await this.getForeignObjectAsync(id);
+						if(obj){
+							const common = obj.common;
+							const state = await this.getForeignStateAsync(id);
+							if(state){
+								await this.addObjectAndCreateState(id,common,customStateArray.rows[index].value[this.namespace],state,true);
+							}
+						}
+					}
+				}
+			}
+		}
 
-		// same thing, but the value is flagged "ack"
-		// ack should be always set to true if the value is received from or acknowledged from the target system
-		await this.setStateAsync("testVariable", { val: true, ack: true });
-
-		// same thing, but the state is deleted after 30s (getState will return null afterwards)
-		await this.setStateAsync("testVariable", { val: true, ack: true, expire: 30 });
-
-		// examples for the checkPassword/checkGroup functions
-		let result = await this.checkPasswordAsync("admin", "iobroker");
-		this.log.info("check user admin pw iobroker: " + result);
-
-		result = await this.checkGroupAsync("admin", "admin");
-		this.log.info("check group user admin group admin: " + result);
+		this.subscribeForeignObjects("*");
+		this.setState(this.subscribecounterId,this.subscribecounter,true);
+		this.setState("info.connection", true, true);
 	}
 
 	/**
@@ -106,22 +111,153 @@ class BidirectionalCounter extends utils.Adapter {
 		}
 	}
 
-	// If you need to react to object changes, uncomment the following block and the corresponding line in the constructor.
-	// You also need to subscribe to the objects with `this.subscribeObjects`, similar to `this.subscribeStates`.
-	// /**
-	//  * Is called if a subscribed object changes
-	//  * @param {string} id
-	//  * @param {ioBroker.Object | null | undefined} obj
-	//  */
-	// onObjectChange(id, obj) {
-	// 	if (obj) {
-	// 		// The object was changed
-	// 		this.log.info(`object ${id} changed: ${JSON.stringify(obj)}`);
-	// 	} else {
-	// 		// The object was deleted
-	// 		this.log.info(`object ${id} deleted`);
-	// 	}
-	// }
+	async addObjectAndCreateState(id,common,customInfo,state,countUpSubscibecounter)
+	{
+		// check if custominfo is available
+		if(!customInfo){
+			return;
+		}
+		if(common.type != "number")
+		{
+			this.log.error(`state ${id} is not type number, but ${common.type}`);
+			return;
+		}
+		this.activeStates[id] = {
+			lastValue: state.val,
+			enableFallbackToZero: customInfo.enableFallbackToZero,
+		};
+
+		// create adapter internal states
+		for(const myId in this.additionalIds){
+			const tempId = this.createStatestring(id) + this.additionalIds[myId];
+			await this.setObjectNotExistsAsync(tempId,{
+				type: "state",
+				common: {
+					name: common.name,
+					type: "number",
+					role: "indicator",
+					read: true,
+					write: true,
+					def: 0
+				},
+				native: {},
+			});
+			this.log.info(`state ${tempId} added / activated`);
+			this.subscribeStates(tempId);
+			const lastState = await this.getStateAsync(tempId);
+			this.log.info(JSON.stringify(lastState));
+			if(lastState){
+				this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = lastState.val;
+			}
+		}
+
+		// Subcribe main state
+		if(countUpSubscibecounter){
+			this.subscribeForeignStates(id);
+			this.subscribecounter += 1;
+			this.setState(this.subscribecounterId,this.subscribecounter,true);
+		}
+	}
+
+	createStatestring(id){
+		return `counted_Values.${id.replace(/\./g, "_")}`;
+	}
+
+	// clear the state from the active array. if selected the state will be deleted
+	async clearStateArrayElement(id)
+	{
+		// Unsubscribe and delete states if exists
+		if(this.activeStates[id]){
+			this.unsubscribeForeignStates(id);
+			this.log.info(`state ${id} not longer subscribed`);
+		}
+		for(const myId in this.additionalIds){
+			const tempId = this.createStatestring(id) + this.additionalIds[myId];
+			const myObj = await this.getObjectAsync(tempId);
+			if(myObj){
+				this.unsubscribeForeignStates(tempId);
+				this.log.info(`state ${tempId} removed`);
+				if(this.config.deleteStatesWithDisable){
+					this.delObjectAsync(tempId);
+					this.log.info(`state ${this.namespace}.${tempId} deleted`);
+				}
+			}
+		}
+
+		// delete active State in array
+		if(this.activeStates[id])
+		{
+			delete this.activeStates[id];
+			this.subscribecounter -= 1;
+			this.setState(this.subscribecounterId,this.subscribecounter,true);
+		}
+	}
+
+	/***************************************************************************************
+	 * ********************************** Changes ******************************************
+	 ***************************************************************************************/
+
+	async onObjectChange(id, obj) {
+		if (obj) {
+			try {
+				// Load configuration as provided in object
+				const stateInfo = await this.getForeignObjectAsync(id);
+				if (!stateInfo) {
+					this.log.error(`Can't get information for ${id}, state will be ignored`);
+					if(this.activeStates[id] != undefined)
+					{
+						this.clearStateArrayElement(id);
+					}
+					return;
+				} else
+				{
+					if(!stateInfo.common.custom){
+						if(this.activeStates[id])
+						{
+							this.clearStateArrayElement(id);
+							return;
+						}
+					}
+					else{
+						const customInfo = stateInfo.common.custom[this.namespace];
+						if(this.activeStates[id])
+						{
+							this.activeStates[id].enableFallbackToZero = customInfo.enableFallbackToZero;
+							const state = await this.getForeignStateAsync(id);
+							if(state){
+								await this.addObjectAndCreateState(id,stateInfo.common,customInfo,state,false);
+							}
+						}
+						else
+						{
+							const state = await this.getForeignStateAsync(id);
+							if(state)
+							{
+								this.addObjectAndCreateState(id,stateInfo.common,customInfo,state,true);
+							}
+							else
+							{
+								this.log.error(`could not read state ${id}`);
+							}
+						}
+					}
+				}
+			} catch (error) {
+				this.log.error(error);
+				this.clearStateArrayElement(id);
+			}
+		} else {
+			// The object was deleted
+			// Check if the object is kwnow
+			const obj = await this.getObjectAsync(this.createStatestring(id) + this.additionalIds.consumed);
+			if(this.activeStates[id] || obj)
+			{
+				this.clearStateArrayElement(id);
+			}
+		}
+	}
+
+
 
 	/**
 	 * Is called if a subscribed state changes
@@ -130,8 +266,32 @@ class BidirectionalCounter extends utils.Adapter {
 	 */
 	onStateChange(id, state) {
 		if (state) {
-			// The state was changed
-			this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
+			// Check if state.val is reachable
+			if(state.val !== undefined && state.val !== null){
+				// Check Changes in Foreign states
+				if(this.activeStates[id]){
+					if(state.val !== 0 || this.activeStates[id].enableFallbackToZero){
+						const difference = Number(state.val) - this.activeStates[id].lastValue;
+						if(difference >= 0){
+							const tempId = this.createStatestring(id) + this.additionalIds.consumed;
+							this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference);
+						}
+						else{
+							const tempId = this.createStatestring(id) + this.additionalIds.delivered;
+							this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] - difference);
+						}
+						const tempId = this.createStatestring(id) + this.additionalIds.total;
+						this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference);
+					}
+					this.activeStates[id].lastValue = state.val;
+				}
+
+				// Check Changes in interneal States
+				else if(this.activeStatesLastAdditionalValues[id] !== undefined && this.activeStatesLastAdditionalValues[id] !== null){
+					this.activeStatesLastAdditionalValues[id] = state.val;
+				}
+			}
+
 		} else {
 			// The state was deleted
 			this.log.info(`state ${id} deleted`);

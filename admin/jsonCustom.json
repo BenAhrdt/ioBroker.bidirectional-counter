@@ -1,0 +1,24 @@
+{
+  "i18n": true,
+  "items": {
+    "_basicSettings": {
+      "newLine": true,
+      "type": "header",
+      "text": "Zählereinstellungen",
+      "sm": 20
+    },
+    "warningText": {
+      "newLine": true,
+      "type": "staticText",
+      "text": "!!! Achtung, es können nur Datenpunkte vom Typ number ausgewählt werden",
+      "sm": 12
+    },
+    "enableFallbackToZero": {
+      "newLine": true,
+      "type": "checkbox",
+      "label": "Nullpunkt erlauben",
+      "tooltip": "Mit Anwahl dieses Feldes, erlauben Sie den Wert 0 als validen Wert. (Kann bei Geräteausfall zu Problemem führen).",
+      "sm":1
+    }
+  }
+}
