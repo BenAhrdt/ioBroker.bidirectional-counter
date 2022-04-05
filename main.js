@@ -276,21 +276,28 @@ class BidirectionalCounter extends utils.Adapter {
 						const difference = Number(state.val) - this.activeStates[id].lastValue;
 						if(difference >= 0){
 							const tempId = this.createStatestring(id) + this.additionalIds.consumed;
-							this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference);
+							const tempValue = this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference;
+							this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = tempValue;
+							this.setStateAsync(tempId,tempValue,true);
 						}
 						else{
 							const tempId = this.createStatestring(id) + this.additionalIds.delivered;
-							this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] - difference);
+							const tempValue = this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] - difference;
+							this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = tempValue;
+							this.setStateAsync(tempId,tempValue,true);
 						}
 						const tempId = this.createStatestring(id) + this.additionalIds.total;
-						this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference);
+						const tempValue = this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference;
+						this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = tempValue;
+						this.setStateAsync(tempId,tempValue,true);
 					}
 					this.activeStates[id].lastValue = state.val;
 				}
 
 				// Check Changes in interneal States
-				else if(this.activeStatesLastAdditionalValues[id] !== undefined && this.activeStatesLastAdditionalValues[id] !== null){
+				else if(this.activeStatesLastAdditionalValues[id] !== undefined && this.activeStatesLastAdditionalValues[id] !== null && !state.ack){
 					this.activeStatesLastAdditionalValues[id] = state.val;
+					this.setForeignStateAsync(id,state.val,true);
 				}
 			}
 
