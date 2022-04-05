@@ -7,7 +7,6 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
-const { statSync } = require("fs");
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -49,7 +48,7 @@ class BidirectionalCounter extends utils.Adapter {
 		// Initialize your adapter here
 		// Reset the connection indicator during startup
 		this.setState("info.connection", false, true);
-		
+
 		// Creates the subscribed state count
 		await this.setObjectNotExistsAsync(this.subscribecounterId, {
 			type: "state",
@@ -146,8 +145,11 @@ class BidirectionalCounter extends utils.Adapter {
 			this.subscribeStates(tempId);
 			const lastState = await this.getStateAsync(tempId);
 			this.log.info(JSON.stringify(lastState));
-			if(lastState){
+			if(lastState !== undefined && lastState !== null){
 				this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = lastState.val;
+			}
+			else{
+				this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = 0;
 			}
 		}
 
