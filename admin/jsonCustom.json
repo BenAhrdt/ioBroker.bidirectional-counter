@@ -18,7 +18,13 @@
       "type": "checkbox",
       "label": "Nullpunkt erlauben",
       "tooltip": "Mit Anwahl dieses Feldes, erlauben Sie den Wert 0 als validen Wert. (Kann bei Geräteausfall zu Problemem führen).",
-      "sm":1
+      "sm":3
+    },
+    "channelName": {
+      "type": "text",
+      "label": "Name",
+      "tooltip": "Tragen Sie hier den Name des Datenpunkts ein, welcher später in dem übergeordnerten Verzeichnnis angezeigt werden soll.",
+      "sm":3
     }
   }
 }

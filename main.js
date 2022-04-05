@@ -123,8 +123,18 @@ class BidirectionalCounter extends utils.Adapter {
 		}
 		this.activeStates[id] = {
 			lastValue: state.val,
-			enableFallbackToZero: customInfo.enableFallbackToZero,
+			enableFallbackToZero: customInfo.enableFallbackToZero
 		};
+
+		// Create adapter internal object
+		const tempId = this.createStatestring(id);
+		await this.setObjectAsync(tempId,{
+			type:"channel",
+			common:{
+				name: customInfo.channelName
+			},
+			native : {},
+		});
 
 		// create adapter internal states
 		for(const myId in this.additionalIds){
@@ -135,7 +145,7 @@ class BidirectionalCounter extends utils.Adapter {
 					name: common.name,
 					type: common.type,
 					role: common.role,
-					unit:common.unit,
+					unit: common.unit,
 					read: true,
 					write: true,
 					def: 0
@@ -186,6 +196,7 @@ class BidirectionalCounter extends utils.Adapter {
 				}
 			}
 		}
+		this.delObjectAsync(this.createStatestring(id));
 
 		// delete active State in array
 		if(this.activeStates[id])
@@ -225,7 +236,6 @@ class BidirectionalCounter extends utils.Adapter {
 						const customInfo = stateInfo.common.custom[this.namespace];
 						if(this.activeStates[id])
 						{
-							this.activeStates[id].enableFallbackToZero = customInfo.enableFallbackToZero;
 							const state = await this.getForeignStateAsync(id);
 							if(state){
 								await this.addObjectAndCreateState(id,stateInfo.common,customInfo,state,false);
