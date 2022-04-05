@@ -133,8 +133,9 @@ class BidirectionalCounter extends utils.Adapter {
 				type: "state",
 				common: {
 					name: common.name,
-					type: "number",
-					role: "indicator",
+					type: common.type,
+					role: common.role,
+					unit:common.unit,
 					read: true,
 					write: true,
 					def: 0
