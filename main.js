@@ -155,13 +155,13 @@ class BidirectionalCounter extends utils.Adapter {
 			this.log.info(`state ${tempId} added / activated`);
 			this.subscribeStates(tempId);
 			const lastState = await this.getStateAsync(tempId);
-			this.log.info(JSON.stringify(lastState));
 			if(lastState !== undefined && lastState !== null){
 				this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = lastState.val;
 			}
 			else{
 				this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = 0;
 			}
+			this.setState(tempId,this.activeStatesLastAdditionalValues[this.namespace + "." + tempId],true);
 		}
 
 		// Subcribe main state
@@ -228,7 +228,7 @@ class BidirectionalCounter extends utils.Adapter {
 					return;
 				} else
 				{
-					if(!stateInfo.common.custom){
+					if(!stateInfo.common.custom || !stateInfo.common.custom[this.namespace]){
 						if(this.activeStates[id])
 						{
 							this.clearStateArrayElement(id);
