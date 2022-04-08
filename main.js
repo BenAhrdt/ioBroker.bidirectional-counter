@@ -192,7 +192,7 @@ class BidirectionalCounter extends utils.Adapter {
 				const tempId = this.createStatestring(id) + this.additionalIds[myId];
 				const myObj = await this.getObjectAsync(tempId);
 				if(myObj){
-					this.unsubscribeForeignStates(tempId);
+					this.unsubscribeStates(tempId);
 					this.log.info(`state ${tempId} removed`);
 					this.delObjectAsync(tempId);
 					this.log.info(`state ${this.namespace}.${tempId} deleted`);
