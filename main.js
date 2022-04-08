@@ -183,31 +183,23 @@ class BidirectionalCounter extends utils.Adapter {
 		if(this.activeStates[id]){
 			this.unsubscribeForeignStates(id);
 			this.log.info(`state ${id} not longer subscribed`);
-		}
-		for(const myId in this.additionalIds){
-			const tempId = this.createStatestring(id) + this.additionalIds[myId];
-			const myObj = await this.getObjectAsync(tempId);
-			if(myObj){
-				this.unsubscribeForeignStates(tempId);
-				this.log.info(`state ${tempId} removed`);
-				if(this.config.deleteStatesWithDisable || deleteState){
-					this.delObjectAsync(tempId);
-					this.log.info(`state ${this.namespace}.${tempId} deleted`);
-				}
-			}
-		}
-		// Delete channel Object
-		if(this.config.deleteStatesWithDisable || deleteState){
-			this.delObjectAsync(this.createStatestring(id));
-		}
-
-		// delete active State in array
-		if(this.activeStates[id])
-		{
 			delete this.activeStates[id];
 			this.subscribecounter -= 1;
 			this.setState(this.subscribecounterId,this.subscribecounter,true);
 		}
+		if(this.config.deleteStatesWithDisable || deleteState){
+			for(const myId in this.additionalIds){
+				const tempId = this.createStatestring(id) + this.additionalIds[myId];
+				const myObj = await this.getObjectAsync(tempId);
+				if(myObj){
+					this.unsubscribeForeignStates(tempId);
+					this.log.info(`state ${tempId} removed`);
+					this.delObjectAsync(tempId);
+					this.log.info(`state ${this.namespace}.${tempId} deleted`);
+				}
+			}
+		// Delete channel Object
+		this.delObjectAsync(this.createStatestring(id));
 	}
 
 	/***************************************************************************************
@@ -221,10 +213,6 @@ class BidirectionalCounter extends utils.Adapter {
 				const stateInfo = await this.getForeignObjectAsync(id);
 				if (!stateInfo) {
 					this.log.error(`Can't get information for ${id}, state will be ignored`);
-					if(this.activeStates[id] != undefined)
-					{
-						this.clearStateArrayElement(id,false);
-					}
 					return;
 				} else
 				{
