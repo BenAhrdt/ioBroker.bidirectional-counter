@@ -198,8 +198,9 @@ class BidirectionalCounter extends utils.Adapter {
 					this.log.info(`state ${this.namespace}.${tempId} deleted`);
 				}
 			}
-		// Delete channel Object
-		this.delObjectAsync(this.createStatestring(id));
+			// Delete channel Object
+			this.delObjectAsync(this.createStatestring(id));
+		}
 	}
 
 	/***************************************************************************************
