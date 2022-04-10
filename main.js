@@ -210,40 +210,32 @@ class BidirectionalCounter extends utils.Adapter {
 	async onObjectChange(id, obj) {
 		if (obj) {
 			try {
-				// Load configuration as provided in object
-				const stateInfo = await this.getForeignObjectAsync(id);
-				if (!stateInfo) {
-					this.log.error(`Can't get information for ${id}, state will be ignored`);
-					return;
-				} else
-				{
-					if(!stateInfo.common.custom || !stateInfo.common.custom[this.namespace]){
-						if(this.activeStates[id])
-						{
-							this.clearStateArrayElement(id,false);
-							return;
+				if(!obj.common.custom || !obj.common.custom[this.namespace]){
+					if(this.activeStates[id])
+					{
+						this.clearStateArrayElement(id,false);
+						return;
+					}
+				}
+				else{
+					const customInfo = obj.common.custom[this.namespace];
+					if(this.activeStates[id])
+					{
+						const state = await this.getForeignStateAsync(id);
+						if(state){
+							await this.addObjectAndCreateState(id,obj.common,customInfo,state,false);
 						}
 					}
-					else{
-						const customInfo = stateInfo.common.custom[this.namespace];
-						if(this.activeStates[id])
+					else
+					{
+						const state = await this.getForeignStateAsync(id);
+						if(state)
 						{
-							const state = await this.getForeignStateAsync(id);
-							if(state){
-								await this.addObjectAndCreateState(id,stateInfo.common,customInfo,state,false);
-							}
+							this.addObjectAndCreateState(id,obj.common,customInfo,state,true);
 						}
 						else
 						{
-							const state = await this.getForeignStateAsync(id);
-							if(state)
-							{
-								this.addObjectAndCreateState(id,stateInfo.common,customInfo,state,true);
-							}
-							else
-							{
-								this.log.error(`could not read state ${id}`);
-							}
+							this.log.error(`could not read state ${id}`);
 						}
 					}
 				}
