@@ -11,6 +11,7 @@
       "newLine": true,
       "type": "staticText",
       "text": "!!! Achtung, es können nur Datenpunkte vom Typ number ausgewählt werden",
+      "hidden": "customObj.common.type === 'number'",
       "sm": 12
     },
     "enableFallbackToZero": {
@@ -18,11 +19,13 @@
       "type": "checkbox",
       "label": "Nullpunkt erlauben",
       "tooltip": "Mit Anwahl dieses Feldes, erlauben Sie den Wert 0 als validen Wert. (Kann bei Geräteausfall zu Problemem führen).",
+      "hidden": "customObj.common.type !== 'number'",
       "sm":3
     },
     "channelName": {
       "type": "text",
       "label": "Name",
+      "hidden": "customObj.common.type !== 'number'",
       "tooltip": "Tragen Sie hier den Name des Datenpunkts ein, welcher später in dem übergeordnerten Verzeichnnis angezeigt werden soll.",
       "sm":3
     }
