@@ -152,7 +152,7 @@ class BidirectionalCounter extends utils.Adapter {
 				},
 				native: {},
 			});
-			this.log.info(`state ${tempId} added / activated`);
+			this.log.debug(`state ${tempId} added / activated`);
 			this.subscribeStates(tempId);
 			const lastState = await this.getStateAsync(tempId);
 			if(lastState !== undefined && lastState !== null){
@@ -182,7 +182,7 @@ class BidirectionalCounter extends utils.Adapter {
 		// Unsubscribe and delete states if exists
 		if(this.activeStates[id]){
 			this.unsubscribeForeignStates(id);
-			this.log.info(`state ${id} not longer subscribed`);
+			this.log.debug(`state ${id} not longer subscribed`);
 			delete this.activeStates[id];
 			this.subscribecounter -= 1;
 			this.setState(this.subscribecounterId,this.subscribecounter,true);
@@ -193,9 +193,9 @@ class BidirectionalCounter extends utils.Adapter {
 				const myObj = await this.getObjectAsync(tempId);
 				if(myObj){
 					this.unsubscribeStates(tempId);
-					this.log.info(`state ${tempId} removed`);
+					this.log.debug(`state ${tempId} removed`);
 					this.delObjectAsync(tempId);
-					this.log.info(`state ${this.namespace}.${tempId} deleted`);
+					this.log.debug(`state ${this.namespace}.${tempId} deleted`);
 				}
 			}
 			// Delete channel Object
@@ -298,7 +298,7 @@ class BidirectionalCounter extends utils.Adapter {
 
 		} else {
 			// The state was deleted
-			this.log.info(`state ${id} deleted`);
+			this.log.debug(`state ${id} deleted`);
 		}
 	}
 
@@ -312,7 +312,7 @@ class BidirectionalCounter extends utils.Adapter {
 	// 	if (typeof obj === "object" && obj.message) {
 	// 		if (obj.command === "send") {
 	// 			// e.g. send email or pushover or whatever
-	// 			this.log.info("send command");
+	// 			this.log.debug("send command");
 
 	// 			// Send response in callback if required
 	// 			if (obj.callback) this.sendTo(obj.from, obj.command, "Message received", obj.callback);
