@@ -1,8 +1,12 @@
 {
 	"common": {
 		"name": "bidirectional-counter",
-		"version": "1.8.5",
+		"version": "1.8.6",
 		"news": {
+			"1.8.6": {
+				"en": "first official version",
+				"de": "Erste offizielle Version"
+			},
 			"0.0.1": {
 				"en": "initial release",
 				"de": "Erstveröffentlichung",
