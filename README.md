@@ -11,7 +11,10 @@ Counter to separate consumption (positive changes) and deliverd (negative change
 	### **WORK IN PROGRESS**
 -->
 
-### **1.6.8**
+### **1.8.7**
+* (BenAhrdt) edit changelog
+
+### **1.8.6**
 * (BenAhrdt) first official version
 
 ### **WORK IN PROGRESS**
