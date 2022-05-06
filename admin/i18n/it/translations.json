@@ -1,0 +1,8 @@
+{
+    "counterSettings": "impostazioni del contatore",
+    "justTypeNumber": "Attenzione, possono essere selezionati solo punti dati di tipo numero",
+    "alowNull": "consentire punto zero",
+    "alowNullTooltip": "Con la selezione di questo campo, impostare 0 su un valore valido. ",
+    "valueName": "nome",
+    "valueNameTooltip": "inserire il Nome dello stato, che verrà visualizzato nella cartella del canale in seguito."
+}

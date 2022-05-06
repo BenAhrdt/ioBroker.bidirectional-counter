@@ -1,0 +1,8 @@
+{
+    "counterSettings": "teller instellingen",
+    "justTypeNumber": "Let op, alleen datapunten van typenummer kunnen worden geselecteerd",
+    "alowNull": "punt van nul toestaan",
+    "alowNullTooltip": "Stel bij selectie van dit veld 0 in op een geldige waarde. ",
+    "valueName": "naam",
+    "valueNameTooltip": "plaats de naam van de staat, die later in de kanaalmap wordt weergegeven."
+}

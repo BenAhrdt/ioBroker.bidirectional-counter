@@ -1,0 +1,8 @@
+{
+    "counterSettings": "Zählereinstellungen",
+    "justTypeNumber": "Achtung, es können nur Datenpunkte vom Typ number ausgewählt werden",
+    "alowNull": "Nullpunkt zulassen",
+    "alowNullTooltip": "Mit Anwahl dieses Feldes, erlauben Sie den Wert 0 als validen Wert. (Kann bei Geräteausfall zu Problemem führen).",
+    "valueName": "Name",
+    "valueNameTooltip": "Tragen Sie hier den Name des Datenpunkts ein, welcher später in dem übergeordnerten Verzeichnnis angezeigt werden soll."
+}

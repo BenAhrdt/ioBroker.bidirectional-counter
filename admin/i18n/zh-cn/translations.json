@@ -1,0 +1,8 @@
+{
+    "counterSettings": "计数器设置",
+    "justTypeNumber": "注意，只能选择类型编号的数据点",
+    "alowNull": "允许零点",
+    "alowNullTooltip": "选择此字段，将 0 设置为有效值。 ",
+    "valueName": "姓名",
+    "valueNameTooltip": "插入状态的名称，稍后将显示在通道文件夹中。"
+}

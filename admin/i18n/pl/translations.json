@@ -1,0 +1,8 @@
+{
+    "counterSettings": "ustawienia licznika",
+    "justTypeNumber": "Uwaga, można wybrać tylko punkty danych o numerze typu",
+    "alowNull": "zezwól na punkt zerowy",
+    "alowNullTooltip": "Po wybraniu tego pola ustaw 0 na prawidłową wartość. ",
+    "valueName": "nazwać",
+    "valueNameTooltip": "wstaw Nazwę stanu, która będzie później wyświetlana w folderze kanału."
+}

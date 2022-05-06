@@ -1,0 +1,8 @@
+{
+    "counterSettings": "configuración del contador",
+    "justTypeNumber": "Atención, solo se pueden seleccionar puntos de datos del número de tipo",
+    "alowNull": "permitir el punto de cero",
+    "alowNullTooltip": "La selección de este campo, establece 0 en un valor válido. ",
+    "valueName": "nombre",
+    "valueNameTooltip": "inserte el nombre del estado, que se mostrará en la carpeta del canal más adelante."
+}
