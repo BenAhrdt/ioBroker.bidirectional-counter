@@ -3,7 +3,7 @@
     "items":{
         "deleteStatesWithDisable": {
                 "type": "checkbox",
-                "text": "deleteStateWithDisableText",
+                "label": "deleteStateWithDisableText",
                 "sm": 6
             }
     }

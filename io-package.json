@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.9.8",
+        "version": "1.10.8",
         "news": {
+            "1.10.8": {
+                "en": "remove words.js",
+                "de": "words.js entfernt",
+                "ru": "удалить слова.js",
+                "pt": "remover palavras.js",
+                "nl": "verwijder woorden.js",
+                "fr": "supprimer mots.js",
+                "it": "rimuovi words.js",
+                "es": "eliminar palabras.js",
+                "pl": "usuń słowa.js",
+                "zh-cn": "删除 words.js"
+            },
             "1.8.7": {
                 "en": "edit changelog",
                 "de": "Changelog bearbeitet",
