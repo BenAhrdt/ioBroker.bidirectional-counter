@@ -4,5 +4,6 @@
     "alowNull": "punt van nul toestaan",
     "alowNullTooltip": "Stel bij selectie van dit veld 0 in op een geldige waarde. ",
     "valueName": "naam",
-    "valueNameTooltip": "plaats de naam van de staat, die later in de kanaalmap wordt weergegeven."
+    "valueNameTooltip": "plaats de naam van de staat, die later in de kanaalmap wordt weergegeven.",
+    "deleteStateWithDisableText": "status verwijderen met uitschakelen"
 }

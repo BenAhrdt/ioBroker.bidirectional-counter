@@ -4,5 +4,6 @@
     "alowNull": "consentire punto zero",
     "alowNullTooltip": "Con la selezione di questo campo, impostare 0 su un valore valido. ",
     "valueName": "nome",
-    "valueNameTooltip": "inserire il Nome dello stato, che verrà visualizzato nella cartella del canale in seguito."
+    "valueNameTooltip": "inserire il Nome dello stato, che verrà visualizzato nella cartella del canale in seguito.",
+    "deleteStateWithDisableText": "elimina lo stato con disabilita"
 }

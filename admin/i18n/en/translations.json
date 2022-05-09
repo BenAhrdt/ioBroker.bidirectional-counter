@@ -5,6 +5,6 @@
     "alowNull": "allow point of zero",
     "alowNullTooltip": "Th selection of this field, set 0 to a valid value. (in case of device reboot it might become an error).",
     "valueName": "name",
-    "valueNameTooltip": "inset the Name of the state, which will be displayed in the channel folder later."
-
+    "valueNameTooltip": "inset the Name of the state, which will be displayed in the channel folder later.",
+    "deleteStateWithDisableText": "delete state with disable"
 }

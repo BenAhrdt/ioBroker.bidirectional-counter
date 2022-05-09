@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.8.8",
+        "version": "1.9.8",
         "news": {
             "1.8.7": {
                 "en": "edit changelog",
@@ -92,6 +92,9 @@
         "connectionType": "local",
         "dataSource": "poll",
         "materialize": true,
+        "adminUI": {
+            "config": "json"
+        },
         "supportCustoms": true,
         "dependencies": [
             {
