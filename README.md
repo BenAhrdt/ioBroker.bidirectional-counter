@@ -5,6 +5,17 @@
 
 Counter to separate consumption (positive changes) and deliverd (negative changes)
 
+With this counter, you can select every state of type number in the custom config.
+The adapter will creates 3 states internal. (cunsumed, delivered and total).
+consumed will be assigned, if a positive change of the subscribed state will be detected.
+delivered will be assigned, if a negative change of the subscribed state will be detected.
+total will be assigned in every case.
+
+e.g. this adapte is usefull to emulate an energymeter with a given ergy value from a foreign device.
+for instance shelly will set energy of a channel back to zero in case of restart.
+The adapter will ignor zero and the counter value is saved for using in other adapters / scripts.
+The counter state will increase up from its saved value, when the shelly energy state increases next time.
+
 ## Changelog
 <!--
 	Placeholder for the next version (at the beginning of the line):

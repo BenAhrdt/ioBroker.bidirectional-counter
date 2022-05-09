@@ -5,5 +5,6 @@
     "alowNullTooltip": "Po wybraniu tego pola ustaw 0 na prawidłową wartość. ",
     "valueName": "nazwać",
     "valueNameTooltip": "wstaw Nazwę stanu, która będzie później wyświetlana w folderze kanału.",
-    "deleteStateWithDisableText": "usuń stan z wyłączonym"
+    "deleteStateWithDisableText": "usuń stan z wyłączonym",
+    "infoToCustomConfiglabel": "wykonaj konfigurację w custom-config stanu"
 }

@@ -1,6 +1,6 @@
 {
   "name": "iobroker.bidirectional-counter",
-  "version": "1.11.8",
+  "version": "1.12.8",
   "description": "Counter to separate consumption (positive changes) and deliverd (negative changes)",
   "author": {
     "name": "BenAhrdt",

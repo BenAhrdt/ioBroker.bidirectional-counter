@@ -5,5 +5,6 @@
     "alowNullTooltip": "Mit Anwahl dieses Feldes, erlauben Sie den Wert 0 als validen Wert. (Kann bei Geräteausfall zu Problemem führen).",
     "valueName": "Name",
     "valueNameTooltip": "Tragen Sie hier den Name des Datenpunkts ein, welcher später in dem übergeordnerten Verzeichnnis angezeigt werden soll.",
-    "deleteStateWithDisableText": "State mit deaktivieren löschen"
+    "deleteStateWithDisableText": "State mit deaktivieren löschen",
+    "infoToCustomConfiglabel": "Die State spezifischen Einstellungen, nehmen Sie bitte direkt in der Benutzerdefinierten Einstellung des jeweilen Sates vor."
 }

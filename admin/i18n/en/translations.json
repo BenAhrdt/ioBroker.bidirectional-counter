@@ -6,5 +6,6 @@
     "alowNullTooltip": "Th selection of this field, set 0 to a valid value. (in case of device reboot it might become an error).",
     "valueName": "name",
     "valueNameTooltip": "inset the Name of the state, which will be displayed in the channel folder later.",
-    "deleteStateWithDisableText": "delete state with disable"
+    "deleteStateWithDisableText": "delete state with disable",
+    "infoToCustomConfiglabel": "do configuration in custom-config of a state"
 }

@@ -5,5 +5,6 @@
     "alowNullTooltip": "选择此字段，将 0 设置为有效值。 ",
     "valueName": "姓名",
     "valueNameTooltip": "插入状态的名称，稍后将显示在通道文件夹中。",
-    "deleteStateWithDisableText": "使用禁用删除状态"
+    "deleteStateWithDisableText": "使用禁用删除状态",
+    "infoToCustomConfiglabel": "在状态的自定义配置中进行配置"
 }

@@ -5,5 +5,6 @@
     "alowNullTooltip": "La selección de este campo, establece 0 en un valor válido. ",
     "valueName": "nombre",
     "valueNameTooltip": "inserte el nombre del estado, que se mostrará en la carpeta del canal más adelante.",
-    "deleteStateWithDisableText": "eliminar estado con deshabilitar"
+    "deleteStateWithDisableText": "eliminar estado con deshabilitar",
+    "infoToCustomConfiglabel": "hacer la configuración en la configuración personalizada de un estado"
 }

@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.11.8",
+        "version": "1.12.8",
         "news": {
             "1.11.8": {
                 "en": "add custom UI in io-package",
