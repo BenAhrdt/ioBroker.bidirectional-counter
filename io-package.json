@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.10.8",
+        "version": "1.11.8",
         "news": {
+            "1.11.8": {
+                "en": "add custom UI in io-package",
+                "de": "Hinzufügen custom UI in der io-package",
+                "ru": "добавить пользовательский интерфейс в io-пакет",
+                "pt": "adicionar interface do usuário personalizada no pacote io",
+                "nl": "aangepaste gebruikersinterface toevoegen in io-pakket",
+                "fr": "ajouter une interface utilisateur personnalisée dans io-package",
+                "it": "aggiungi un'interfaccia utente personalizzata nel pacchetto io",
+                "es": "agregar interfaz de usuario personalizada en io-package",
+                "pl": "dodaj niestandardowy interfejs użytkownika w pakiecie io",
+                "zh-cn": "在 io-package 中添加自定义 UI"
+            },
             "1.10.8": {
                 "en": "remove words.js",
                 "de": "words.js entfernt",
@@ -105,7 +117,8 @@
         "dataSource": "poll",
         "materialize": true,
         "adminUI": {
-            "config": "json"
+            "config": "json",
+            "custom": "json"
         },
         "supportCustoms": true,
         "dependencies": [
