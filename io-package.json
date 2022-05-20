@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.13.8",
+        "version": "1.14.8",
         "news": {
+            "1.14.8": {
+                "en": "info.connection deleted",
+                "de": "info.connection gelöscht",
+                "ru": "информация.соединение удалено",
+                "pt": "info.connection excluído",
+                "nl": "info.verbinding verwijderd",
+                "fr": "info.connexion supprimée",
+                "it": "info.connection cancellato",
+                "es": "info.conexión eliminada",
+                "pl": "info.połączenie usunięte",
+                "zh-cn": "info.connection 已删除"
+            },
             "1.13.8": {
                 "en": "setState used in case of writing internal states",
                 "de": "setState wird verwendet, wenn interne Zustände geschrieben werden",
@@ -150,19 +162,6 @@
                 "name": "Information"
             },
             "native": {}
-        },
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
+        }
     ]
 }
