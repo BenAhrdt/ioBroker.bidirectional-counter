@@ -46,8 +46,6 @@ class BidirectionalCounter extends utils.Adapter {
 	 */
 	async onReady() {
 		// Initialize your adapter here
-		// Reset the connection indicator during startup
-		this.setState("info.connection", false, true);
 
 		// Creates the subscribed state count
 		await this.setObjectNotExistsAsync(this.subscribecounterId, {
@@ -89,7 +87,6 @@ class BidirectionalCounter extends utils.Adapter {
 
 		this.subscribeForeignObjects("*");
 		this.setState(this.subscribecounterId,this.subscribecounter,true);
-		this.setState("info.connection", true, true);
 	}
 
 	/**
@@ -143,7 +140,7 @@ class BidirectionalCounter extends utils.Adapter {
 				type: "state",
 				common: {
 					name: common.name,
-					type: common.type,
+					type: "number",
 					role: common.role,
 					unit: common.unit,
 					read: true,
@@ -292,7 +289,7 @@ class BidirectionalCounter extends utils.Adapter {
 				// Check Changes in interneal States
 				else if(this.activeStatesLastAdditionalValues[id] !== undefined && this.activeStatesLastAdditionalValues[id] !== null && !state.ack){
 					this.activeStatesLastAdditionalValues[id] = state.val;
-					this.setForeignStateAsync(id,state.val,true);
+					this.setStateAsync(id,state.val,true);
 				}
 			}
 

@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.12.8",
+        "version": "1.13.8",
         "news": {
+            "1.13.8": {
+                "en": "setState used in case of writing internal states",
+                "de": "setState wird verwendet, wenn interne Zustände geschrieben werden",
+                "ru": "setState используется в случае записи внутренних состояний",
+                "pt": "setState usado no caso de escrever estados internos",
+                "nl": "setState gebruikt bij het schrijven van interne toestanden",
+                "fr": "setState utilisé en cas d'écriture d'états internes",
+                "it": "setState utilizzato in caso di scrittura di stati interni",
+                "es": "setState utilizado en caso de escribir estados internos",
+                "pl": "setState używane w przypadku zapisywania stanów wewnętrznych",
+                "zh-cn": "用于写入内部状态的 setState"
+            },
             "1.11.8": {
                 "en": "add custom UI in io-package",
                 "de": "Hinzufügen custom UI in der io-package",
@@ -115,7 +127,6 @@
         "compact": true,
         "connectionType": "local",
         "dataSource": "poll",
-        "materialize": true,
         "adminUI": {
             "config": "json",
             "custom": "json"
@@ -140,18 +151,18 @@
             },
             "native": {}
         },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Device or service connected",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
     ]
 }

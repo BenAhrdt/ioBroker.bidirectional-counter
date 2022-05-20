@@ -22,14 +22,16 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 
+### **1.13.8**
+* (BenAhrdt) fixed changes for official version
+  use seState to write internal adapter states
+
 ### **1.8.7**
 * (BenAhrdt) edit changelog
 
 ### **1.8.6**
 * (BenAhrdt) first official version
 
-### **WORK IN PROGRESS**
-* (BenAhrdt) initial release
 
 ## License
 MIT License
