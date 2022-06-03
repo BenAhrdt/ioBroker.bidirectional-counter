@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.14.8",
+        "version": "1.14.9",
         "news": {
+            "1.14.9": {
+                "en": "readme changelog fixed",
+                "de": "Readme-Änderungsprotokoll behoben",
+                "ru": "исправлен журнал изменений readme",
+                "pt": "log de alterações leia-me corrigido",
+                "nl": "readme changelog opgelost",
+                "fr": "fichier readme changelog corrigé",
+                "it": "readme changelog corretto",
+                "es": "Léame registro de cambios arreglado",
+                "pl": "naprawiono dziennik zmian readme",
+                "zh-cn": "自述文件更改日志已修复"
+            },
             "1.14.8": {
                 "en": "info.connection deleted",
                 "de": "info.connection gelöscht",
