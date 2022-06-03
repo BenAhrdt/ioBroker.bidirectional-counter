@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.14.9",
+        "version": "1.14.10",
         "news": {
+            "1.14.10": {
+                "en": "first use of release script",
+                "de": "erste Verwendung des Release-Skripts",
+                "ru": "первое использование сценария выпуска",
+                "pt": "primeiro uso do script de lançamento",
+                "nl": "eerste gebruik van releasescript",
+                "fr": "première utilisation du script de version",
+                "it": "primo utilizzo dello script di rilascio",
+                "es": "primer uso del script de lanzamiento",
+                "pl": "pierwsze użycie skryptu wydania",
+                "zh-cn": "首次使用发布脚本"
+            },
             "1.14.9": {
                 "en": "readme changelog fixed",
                 "de": "Readme-Änderungsprotokoll behoben",
