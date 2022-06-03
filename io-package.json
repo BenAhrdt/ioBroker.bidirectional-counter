@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "1.14.10",
+        "version": "2.0.0",
         "news": {
+            "2.0.0": {
+                "en": "release script implemented",
+                "de": "Release-Skript implementiert",
+                "ru": "скрипт релиза реализован",
+                "pt": "script de lançamento implementado",
+                "nl": "releasescript geïmplementeerd",
+                "fr": "script de version implémenté",
+                "it": "script di rilascio implementato",
+                "es": "secuencia de comandos de lanzamiento implementada",
+                "pl": "zaimplementowany skrypt wydania",
+                "zh-cn": "发布脚本已实现"
+            },
             "1.14.10": {
                 "en": "first use of release script",
                 "de": "erste Verwendung des Release-Skripts",
