@@ -107,6 +107,7 @@ class BidirectionalCounter extends utils.Adapter {
 		}
 	}
 
+	// Creats a state with the given id
 	async addObjectAndCreateState(id,common,customInfo,state,countUpSubscibecounter)
 	{
 		// check if custominfo is available
