@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "2.0.1",
+        "version": "2.0.2",
         "news": {
+            "2.0.2": {
+                "en": "fixed a comment Bug",
+                "de": "einen Kommentarfehler behoben",
+                "ru": "исправлена ошибка комментария",
+                "pt": "corrigido um erro de comentário",
+                "nl": "een opmerking opgelost Bug",
+                "fr": "correction d'un bug de commentaire",
+                "it": "corretto un bug di commento",
+                "es": "corrigió un error de comentario",
+                "pl": "naprawiono błąd komentarza",
+                "zh-cn": "修复了一个评论错误"
+            },
             "2.0.1": {
                 "en": "first try to release and push with Token",
                 "de": "Versuchen Sie zuerst, mit Token loszulassen und zu pushen",
