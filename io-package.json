@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "2.0.0",
+        "version": "2.0.1",
         "news": {
+            "2.0.1": {
+                "en": "first try to release and push with Token",
+                "de": "Versuchen Sie zuerst, mit Token loszulassen und zu pushen",
+                "ru": "сначала попробуйте отпустить и нажать с помощью токена",
+                "pt": "primeiro tente liberar e empurrar com Token",
+                "nl": "probeer eerst los te laten en te duwen met Token",
+                "fr": "essayez d'abord de relâcher et de pousser avec Token",
+                "it": "prima prova a rilasciare e spingere con Token",
+                "es": "primero intente soltar y empujar con Token",
+                "pl": "najpierw spróbuj zwolnić i wypchnąć za pomocą tokena",
+                "zh-cn": "首先尝试使用 Token 发布和推送"
+            },
             "2.0.0": {
                 "en": "release script implemented",
                 "de": "Release-Skript implementiert",
