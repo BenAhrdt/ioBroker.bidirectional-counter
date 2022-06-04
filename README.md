@@ -17,6 +17,13 @@ The adapter will ignor zero and the counter value is saved for using in other ad
 The counter state will increase up from its saved value, when the shelly energy state increases next time.
 
 ## Changelog
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
+
+### **WORK IN PROGRESS**
+* (BenAhrdt) first try to release and push with Token
 
 ### 2.0.0 (2022-06-03)
 * (BenAhrdt) release script implemented
