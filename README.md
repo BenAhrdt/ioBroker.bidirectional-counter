@@ -1,6 +1,15 @@
 ![Logo](admin/bidirectional-counter.png)
 # ioBroker.bidirectional-counter
 
+[![NPM version](https://img.shields.io/npm/v/iobroker.bidirectional-counter.svg)](https://www.npmjs.com/package/iobroker.bidirectional-counter)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.bidirectional-counter.svg)](https://www.npmjs.com/package/iobroker.bidirectional-counter)
+![Number of Installations](https://iobroker.live/badges/bidirectional-counter-installed.svg)
+![Current version in stable repository](https://iobroker.live/badges/bidirectional-counter-stable.svg)
+[![Dependency Status](https://img.shields.io/david/BenAhrdt/iobroker.bidirectional-counter.svg)](https://david-dm.org/BenAhrdt/iobroker.bidirectional-counter)
+
+[![NPM](https://nodei.co/npm/iobroker.bidirectional-counter.png?downloads=true)](https://nodei.co/npm/iobroker.bidirectional-counter/)
+
+**Tests:** ![Test and Release](https://github.com/BenAhrdt/ioBroker.bidirectional-counter/workflows/Test%20and%20Release/badge.svg)
 ## bidirectional-counter adapter for ioBroker
 
 Counter to separate consumption (positive changes) and deliverd (negative changes)
@@ -21,6 +30,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS**
+* (BenAhrdt) readme fixed
 
 ### 2.0.2 (2022-06-04)
 * (BenAhrdt) fixed a comment Bug
