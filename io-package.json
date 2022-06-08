@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "2.0.3",
+        "version": "2.0.4",
         "news": {
+            "2.0.4": {
+                "en": "unsubscribe fixed",
+                "de": "abmelden fest",
+                "ru": "отписаться от фиксированной",
+                "pt": "cancelamento de assinatura",
+                "nl": "onbeschrijf gerepareerd",
+                "fr": "unsubscribe fixed",
+                "it": "annullare l'iscrizione",
+                "es": "suscripción fija",
+                "pl": "nieczytelny",
+                "zh-cn": "未作规定的"
+            },
             "2.0.3": {
                 "en": "readme fixed",
                 "de": "Readme behoben",
