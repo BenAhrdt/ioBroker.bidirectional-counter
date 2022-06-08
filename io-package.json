@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "2.0.4",
+        "version": "2.0.5",
         "news": {
+            "2.0.5": {
+                "en": "write ack = true in case of additional state is subscribed",
+                "de": "schreiben ack = wahr bei zusätzlichem zustand abonniert",
+                "ru": "написать ack = true в случае дополнительного состояния подписано",
+                "pt": "write ack = true em caso de estado adicional é subscrito",
+                "nl": "schrijf ack = waar in geval van extra staat wordt ingediend",
+                "fr": "écrire ack = true en cas d'état supplémentaire est souscrit",
+                "it": "scrivere ack = vero in caso di stato aggiuntivo è sottoscritto",
+                "es": "escribir ack = verdadero en caso de estado adicional se suscribe",
+                "pl": "ac = prawdziwa w przypadku stanu dodatkowego jest podana do zapisu",
+                "zh-cn": "写包装=在有更多国家的情况下真实情况"
+            },
             "2.0.4": {
                 "en": "unsubscribe fixed",
                 "de": "abmelden fest",
