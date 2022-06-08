@@ -302,8 +302,8 @@ class BidirectionalCounter extends utils.Adapter {
 					this.activeStates[id].lastValue = state.val;
 				}
 
-				// Check Changes in interneal States
-				else if(this.activeStatesLastAdditionalValues[id] !== undefined && this.activeStatesLastAdditionalValues[id] !== null && !state.ack){
+				// Check Changes in internal States (also if id is active state)
+				if(this.activeStatesLastAdditionalValues[id] !== undefined && this.activeStatesLastAdditionalValues[id] !== null && !state.ack){
 					this.activeStatesLastAdditionalValues[id] = state.val;
 					this.setStateAsync(id,state.val,true);
 				}

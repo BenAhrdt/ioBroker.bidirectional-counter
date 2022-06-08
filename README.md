@@ -31,6 +31,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 
+### **WORK IN PROGRESS** - rewrite additional state with ack true
+* (BenAhrdt) write ack = true in case of additional state is subscribed
+
 ### 2.0.4 (2022-06-08) - do not unsubscribe
 * (BenAhrdt) unsubscribe fixed
 
