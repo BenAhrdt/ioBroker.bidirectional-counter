@@ -231,7 +231,7 @@
         "readme": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/main/README.md",
         "loglevel": "info",
         "mode": "daemon",
-        "type": "energy",
+        "type": "misc-data",
         "compact": true,
         "connectionType": "local",
         "dataSource": "poll",
