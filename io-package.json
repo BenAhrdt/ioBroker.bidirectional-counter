@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "2.0.5",
+        "version": "2.0.6",
         "news": {
+            "2.0.6": {
+                "en": "change adapter type into misc-data",
+                "de": "adaptertyp in misc-daten ändern",
+                "ru": "изменить тип адаптера в misc-data",
+                "pt": "alterar o tipo de adaptador em dados diversos",
+                "nl": "verander adaptertype in misc-data",
+                "fr": "modifier le type d'adaptateur en misc-data",
+                "it": "cambiare il tipo di adattatore in dati misc",
+                "es": "cambio de tipo de adaptador en datos erróneos",
+                "pl": "adapter zmienny",
+                "zh-cn": "b. 变化的变量"
+            },
             "2.0.5": {
                 "en": "write ack = true in case of additional state is subscribed",
                 "de": "schreiben ack = wahr bei zusätzlichem zustand abonniert",
