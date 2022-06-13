@@ -31,6 +31,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 
+### **WORK IN PROGRESS** - adapter type changed
+* (BenAhrdt) change adapter type into misc-data
+
 ### 2.0.5 (2022-06-08) - rewrite additional state with ack true
 * (BenAhrdt) write ack = true in case of additional state is subscribed
 
