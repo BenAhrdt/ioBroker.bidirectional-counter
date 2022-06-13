@@ -240,6 +240,11 @@
             "custom": "json"
         },
         "supportCustoms": true,
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.0"
+            }
+        ],
         "dependencies": [
             {
                 "js-controller": ">=2.0.0"
@@ -256,6 +261,19 @@
             "type": "channel",
             "common": {
                 "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.subscribedStatesCount",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "Count of subscribed states",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": 0
             },
             "native": {}
         }
