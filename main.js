@@ -136,9 +136,7 @@ class BidirectionalCounter extends utils.Adapter {
 				},
 				native: {},
 			});
-			if(this.common.loglevel == "debug"){
-				this.log.debug(`state ${tempId} added / activated`);
-			}
+			this.log.debug(`state ${tempId} added / activated`);
 			this.subscribeStates(tempId);
 			const lastState = await this.getStateAsync(tempId);
 			if(lastState !== undefined && lastState !== null){
@@ -172,14 +170,10 @@ class BidirectionalCounter extends utils.Adapter {
 			this.setState(this.subscribecounterId,this.subscribecounter,true);
 			if(!this.activeStatesLastAdditionalValues[id]){ // Dont unsubscribe in case of is additional value
 				this.unsubscribeForeignStates(id);
-				if(this.common.loglevel == "debug"){
-					this.log.debug(`state ${id} not longer subscribed`);
-				}
+				this.log.debug(`state ${id} not longer subscribed`);
 			}
 			else{
-				if(this.common.loglevel == "debug"){
-					this.log.debug(`state ${id} not longer subscribed as active state, but still as additional`);
-				}
+				this.log.debug(`state ${id} not longer subscribed as active state, but still as additional`);
 			}
 		}
 		if(this.config.deleteStatesWithDisable || deleteState){
@@ -188,13 +182,9 @@ class BidirectionalCounter extends utils.Adapter {
 				const myObj = await this.getObjectAsync(tempId);
 				if(myObj){
 					this.unsubscribeStates(tempId);
-					if(this.common.loglevel == "debug"){
-						this.log.debug(`state ${tempId} removed`);
-					}
+					this.log.debug(`state ${tempId} removed`);
 					this.delObjectAsync(tempId);
-					if(this.common.loglevel == "debug"){
-						this.log.debug(`state ${this.namespace}.${tempId} deleted`);
-					}
+					this.log.debug(`state ${this.namespace}.${tempId} deleted`);
 				}
 			}
 			// Delete channel Object
@@ -297,9 +287,7 @@ class BidirectionalCounter extends utils.Adapter {
 
 		} else {
 			// The state was deleted
-			if(this.common.loglevel == "debug"){
-				this.log.debug(`state ${id} deleted`);
-			}
+			this.log.debug(`state ${id} deleted`);
 		}
 	}
 
