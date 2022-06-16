@@ -31,7 +31,7 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 
-### **WORK IN PROGRESS** - loglevel query deleted
+### 2.0.7 (2022-06-16) - loglevel query deleted
 * (BenAhrdt) dont check loglevel before log.debug()
 
 ### 2.0.6 (2022-06-13) - adapter type changed
