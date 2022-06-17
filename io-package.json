@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "bidirectional-counter",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "news": {
+            "2.0.8": {
+                "en": "readme updated with paypal link",
+                "de": "readme aktualisiert mit paypal link",
+                "ru": "readme обновлено с помощью paypal link",
+                "pt": "readme atualizado com link paypal",
+                "nl": "vertaling:",
+                "fr": "readme mise à jour avec paypal link",
+                "it": "aggiornato con paypal link",
+                "es": "readme actualizado con enlace paypal",
+                "pl": "odczytać",
+                "zh-cn": "薪金联系更新"
+            },
             "2.0.7": {
                 "en": "dont check loglevel before log.debug()",
                 "de": "nicht loglevel vor log.debug überprüfen(",
