@@ -10,6 +10,8 @@
 [![NPM](https://nodei.co/npm/iobroker.bidirectional-counter.png?downloads=true)](https://nodei.co/npm/iobroker.bidirectional-counter/)
 
 **Tests:** ![Test and Release](https://github.com/BenAhrdt/ioBroker.bidirectional-counter/workflows/Test%20and%20Release/badge.svg)
+[![Donate](https://img.shields.io/badge/paypal-donate%20|%20spenden-blue.svg)](https://paypal.me/besc83)
+
 ## bidirectional-counter adapter for ioBroker
 
 Counter to separate consumption (positive changes) and deliverd (negative changes)
@@ -30,6 +32,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS** - Readme updated
+* (BenAhrdt) readme updated with paypal link
 
 ### 2.0.7 (2022-06-16) - loglevel query deleted
 * (BenAhrdt) dont check loglevel before log.debug()
