@@ -23,7 +23,7 @@
     "url": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.6.0"
+    "@iobroker/adapter-core": "^2.6.6"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^2.2.2",
