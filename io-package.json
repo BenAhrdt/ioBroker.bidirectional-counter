@@ -1,317 +1,186 @@
 {
-    "common": {
-        "name": "bidirectional-counter",
-        "version": "2.0.8",
-        "news": {
-            "2.0.8": {
-                "en": "readme updated with paypal link",
-                "de": "readme aktualisiert mit paypal link",
-                "ru": "readme обновлено с помощью paypal link",
-                "pt": "readme atualizado com link paypal",
-                "nl": "vertaling:",
-                "fr": "readme mise à jour avec paypal link",
-                "it": "aggiornato con paypal link",
-                "es": "readme actualizado con enlace paypal",
-                "pl": "odczytać",
-                "zh-cn": "薪金联系更新"
-            },
-            "2.0.7": {
-                "en": "dont check loglevel before log.debug()",
-                "de": "nicht loglevel vor log.debug überprüfen(",
-                "ru": "не проверять уровень лога перед log.debug)(",
-                "pt": "não verifique o nível de log antes log.debug)(",
-                "nl": "controleer loge niet voor logebug",
-                "fr": "dont vérifier le niveau de log avant log.debug)(",
-                "it": "non controllare il livello di log prima log.debug)(",
-                "es": "no comprueba el nivel de registro antes de log.debug)(",
-                "pl": "profil na stronie logline (ang.)",
-                "zh-cn": "固体检查在逻辑前的逻辑水平(debug)"
-            },
-            "2.0.6": {
-                "en": "change adapter type into misc-data",
-                "de": "adaptertyp in misc-daten ändern",
-                "ru": "изменить тип адаптера в misc-data",
-                "pt": "alterar o tipo de adaptador em dados diversos",
-                "nl": "verander adaptertype in misc-data",
-                "fr": "modifier le type d'adaptateur en misc-data",
-                "it": "cambiare il tipo di adattatore in dati misc",
-                "es": "cambio de tipo de adaptador en datos erróneos",
-                "pl": "adapter zmienny",
-                "zh-cn": "b. 变化的变量"
-            },
-            "2.0.5": {
-                "en": "write ack = true in case of additional state is subscribed",
-                "de": "schreiben ack = wahr bei zusätzlichem zustand abonniert",
-                "ru": "написать ack = true в случае дополнительного состояния подписано",
-                "pt": "write ack = true em caso de estado adicional é subscrito",
-                "nl": "schrijf ack = waar in geval van extra staat wordt ingediend",
-                "fr": "écrire ack = true en cas d'état supplémentaire est souscrit",
-                "it": "scrivere ack = vero in caso di stato aggiuntivo è sottoscritto",
-                "es": "escribir ack = verdadero en caso de estado adicional se suscribe",
-                "pl": "ac = prawdziwa w przypadku stanu dodatkowego jest podana do zapisu",
-                "zh-cn": "写包装=在有更多国家的情况下真实情况"
-            },
-            "2.0.4": {
-                "en": "unsubscribe fixed",
-                "de": "abmelden fest",
-                "ru": "отписаться от фиксированной",
-                "pt": "cancelamento de assinatura",
-                "nl": "onbeschrijf gerepareerd",
-                "fr": "unsubscribe fixed",
-                "it": "annullare l'iscrizione",
-                "es": "suscripción fija",
-                "pl": "nieczytelny",
-                "zh-cn": "未作规定的"
-            },
-            "2.0.3": {
-                "en": "readme fixed",
-                "de": "Readme behoben",
-                "ru": "исправлен файл readme",
-                "pt": "leia-me corrigido",
-                "nl": "leesmij opgelost",
-                "fr": "Lisez-moi corrigé",
-                "it": "readme risolto",
-                "es": "Léame corregido",
-                "pl": "czytaj mi naprawiono",
-                "zh-cn": "自述文件已修复"
-            },
-            "2.0.2": {
-                "en": "fixed a comment Bug",
-                "de": "einen Kommentarfehler behoben",
-                "ru": "исправлена ошибка комментария",
-                "pt": "corrigido um erro de comentário",
-                "nl": "een opmerking opgelost Bug",
-                "fr": "correction d'un bug de commentaire",
-                "it": "corretto un bug di commento",
-                "es": "corrigió un error de comentario",
-                "pl": "naprawiono błąd komentarza",
-                "zh-cn": "修复了一个评论错误"
-            },
-            "2.0.1": {
-                "en": "first try to release and push with Token",
-                "de": "Versuchen Sie zuerst, mit Token loszulassen und zu pushen",
-                "ru": "сначала попробуйте отпустить и нажать с помощью токена",
-                "pt": "primeiro tente liberar e empurrar com Token",
-                "nl": "probeer eerst los te laten en te duwen met Token",
-                "fr": "essayez d'abord de relâcher et de pousser avec Token",
-                "it": "prima prova a rilasciare e spingere con Token",
-                "es": "primero intente soltar y empujar con Token",
-                "pl": "najpierw spróbuj zwolnić i wypchnąć za pomocą tokena",
-                "zh-cn": "首先尝试使用 Token 发布和推送"
-            },
-            "2.0.0": {
-                "en": "release script implemented",
-                "de": "Release-Skript implementiert",
-                "ru": "скрипт релиза реализован",
-                "pt": "script de lançamento implementado",
-                "nl": "releasescript geïmplementeerd",
-                "fr": "script de version implémenté",
-                "it": "script di rilascio implementato",
-                "es": "secuencia de comandos de lanzamiento implementada",
-                "pl": "zaimplementowany skrypt wydania",
-                "zh-cn": "发布脚本已实现"
-            },
-            "1.14.10": {
-                "en": "first use of release script",
-                "de": "erste Verwendung des Release-Skripts",
-                "ru": "первое использование сценария выпуска",
-                "pt": "primeiro uso do script de lançamento",
-                "nl": "eerste gebruik van releasescript",
-                "fr": "première utilisation du script de version",
-                "it": "primo utilizzo dello script di rilascio",
-                "es": "primer uso del script de lanzamiento",
-                "pl": "pierwsze użycie skryptu wydania",
-                "zh-cn": "首次使用发布脚本"
-            },
-            "1.14.9": {
-                "en": "readme changelog fixed",
-                "de": "Readme-Änderungsprotokoll behoben",
-                "ru": "исправлен журнал изменений readme",
-                "pt": "log de alterações leia-me corrigido",
-                "nl": "readme changelog opgelost",
-                "fr": "fichier readme changelog corrigé",
-                "it": "readme changelog corretto",
-                "es": "Léame registro de cambios arreglado",
-                "pl": "naprawiono dziennik zmian readme",
-                "zh-cn": "自述文件更改日志已修复"
-            },
-            "1.14.8": {
-                "en": "info.connection deleted",
-                "de": "info.connection gelöscht",
-                "ru": "информация.соединение удалено",
-                "pt": "info.connection excluído",
-                "nl": "info.verbinding verwijderd",
-                "fr": "info.connexion supprimée",
-                "it": "info.connection cancellato",
-                "es": "info.conexión eliminada",
-                "pl": "info.połączenie usunięte",
-                "zh-cn": "info.connection 已删除"
-            },
-            "1.13.8": {
-                "en": "setState used in case of writing internal states",
-                "de": "setState wird verwendet, wenn interne Zustände geschrieben werden",
-                "ru": "setState используется в случае записи внутренних состояний",
-                "pt": "setState usado no caso de escrever estados internos",
-                "nl": "setState gebruikt bij het schrijven van interne toestanden",
-                "fr": "setState utilisé en cas d'écriture d'états internes",
-                "it": "setState utilizzato in caso di scrittura di stati interni",
-                "es": "setState utilizado en caso de escribir estados internos",
-                "pl": "setState używane w przypadku zapisywania stanów wewnętrznych",
-                "zh-cn": "用于写入内部状态的 setState"
-            },
-            "1.11.8": {
-                "en": "add custom UI in io-package",
-                "de": "Hinzufügen custom UI in der io-package",
-                "ru": "добавить пользовательский интерфейс в io-пакет",
-                "pt": "adicionar interface do usuário personalizada no pacote io",
-                "nl": "aangepaste gebruikersinterface toevoegen in io-pakket",
-                "fr": "ajouter une interface utilisateur personnalisée dans io-package",
-                "it": "aggiungi un'interfaccia utente personalizzata nel pacchetto io",
-                "es": "agregar interfaz de usuario personalizada en io-package",
-                "pl": "dodaj niestandardowy interfejs użytkownika w pakiecie io",
-                "zh-cn": "在 io-package 中添加自定义 UI"
-            },
-            "1.10.8": {
-                "en": "remove words.js",
-                "de": "words.js entfernt",
-                "ru": "удалить слова.js",
-                "pt": "remover palavras.js",
-                "nl": "verwijder woorden.js",
-                "fr": "supprimer mots.js",
-                "it": "rimuovi words.js",
-                "es": "eliminar palabras.js",
-                "pl": "usuń słowa.js",
-                "zh-cn": "删除 words.js"
-            },
-            "1.8.7": {
-                "en": "edit changelog",
-                "de": "Changelog bearbeitet",
-                "ru": "редактировать журнал изменений",
-                "pt": "editar registro de alterações",
-                "nl": "wijzigingslog bewerken",
-                "fr": "modifier le journal des modifications",
-                "it": "modifica il registro delle modifiche",
-                "es": "editar registro de cambios",
-                "pl": "edytuj dziennik zmian",
-                "zh-cn": "编辑变更日志"
-            },
-            "1.8.6": {
-                "en": "first official version",
-                "de": "Erste offizielle Version",
-                "ru": "первая официальная версия",
-                "pt": "primeira versão oficial",
-                "nl": "eerste officiële versie",
-                "fr": "première version officielle",
-                "it": "prima versione ufficiale",
-                "es": "primera versión oficial",
-                "pl": "pierwsza oficjalna wersja",
-                "zh-cn": "第一个正式版"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版"
-            }
-        },
-        "title": "Bidirectional counter",
-        "titleLang": {
-            "en": "Bidirectional counter",
-            "de": "Bidirektionaler Zähler",
-            "ru": "Двунаправленный счетчик",
-            "pt": "Contador bidirecional",
-            "nl": "Bidirectionele teller",
-            "fr": "Compteur bidirectionnel",
-            "it": "Contatore bidirezionale",
-            "es": "Contador bidireccional",
-            "pl": "Licznik dwukierunkowy",
-            "zh-cn": "双向计数器"
-        },
-        "desc": {
-            "en": "Counter to separate consumption (positive changes) and deliverd (negative changes)",
-            "de": "Zähler zum separaten Verbrauch (positive Änderungen) und geliefert (negative Änderungen)",
-            "ru": "Счетчик раздельного потребления (положительные изменения) и поставки (отрицательные изменения)",
-            "pt": "Contador para separar o consumo (mudanças positivas) e entregue (mudanças negativas)",
-            "nl": "Teller om verbruik (positieve veranderingen) en afgeleverde (negatieve veranderingen) te scheiden",
-            "fr": "Compteur pour séparer la consommation (variations positives) et la livraison (variations négatives)",
-            "it": "Contatore per separare i consumi (variazioni positive) e erogati (variazioni negative)",
-            "es": "Contador para separar el consumo (cambios positivos) y entregado (cambios negativos)",
-            "pl": "Licznik do oddzielnego zużycia (zmiany dodatnie) i dostarczonego (zmiany ujemne)",
-            "zh-cn": "反对单独消费（积极变化）和交付（消极变化）"
-        },
-        "authors": [
-            "BenAhrdt <bsahrdt@gmail.com>"
-        ],
-        "keywords": [
-            "bidirectional",
-            "Bidirektional",
-            "Consumed",
-            "Bezogen",
-            "delivered",
-            "Geliefert",
-            "counter",
-            "Zähler"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "icon": "bidirectional-counter.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/BenAhrdt/ioBroker.bidirectional-counter/main/admin/bidirectional-counter.png",
-        "readme": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/main/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "misc-data",
-        "compact": true,
-        "connectionType": "local",
-        "dataSource": "poll",
-        "adminUI": {
-            "config": "json",
-            "custom": "json"
-        },
-        "supportCustoms": true,
-        "globalDependencies": [
-            {
-                "admin": ">=5.1.0"
-            }
-        ],
-        "dependencies": [
-            {
-                "js-controller": ">=2.0.0"
-            }
-        ]
+  "common": {
+    "name": "bidirectional-counter",
+    "version": "2.1.0",
+    "news": {
+      "2.1.0": {
+        "en": "updated to new releasescript",
+        "de": "aktualisiert zum neuen releasescript",
+        "ru": "обновлено к новому релизу",
+        "pt": "atualizado para novo releasescript",
+        "nl": "vertaling:",
+        "fr": "mise à jour du nouveau communiqué",
+        "it": "aggiornato al nuovo releasescript",
+        "es": "actualizados a nuevos módulos de lanzamiento",
+        "pl": "uaktualnić do nowszych wersji",
+        "uk": "оновлений до нового релізу",
+        "zh-cn": "新的新闻稿的更新"
+      },
+      "2.0.8": {
+        "en": "readme updated with paypal link",
+        "de": "readme aktualisiert mit paypal link",
+        "ru": "readme обновлено с помощью paypal link",
+        "pt": "readme atualizado com link paypal",
+        "nl": "vertaling:",
+        "fr": "readme mise à jour avec paypal link",
+        "it": "aggiornato con paypal link",
+        "es": "readme actualizado con enlace paypal",
+        "pl": "odczytać",
+        "zh-cn": "薪金联系更新"
+      },
+      "2.0.7": {
+        "en": "dont check loglevel before log.debug()",
+        "de": "nicht loglevel vor log.debug überprüfen(",
+        "ru": "не проверять уровень лога перед log.debug)(",
+        "pt": "não verifique o nível de log antes log.debug)(",
+        "nl": "controleer loge niet voor logebug",
+        "fr": "dont vérifier le niveau de log avant log.debug)(",
+        "it": "non controllare il livello di log prima log.debug)(",
+        "es": "no comprueba el nivel de registro antes de log.debug)(",
+        "pl": "profil na stronie logline (ang.)",
+        "zh-cn": "固体检查在逻辑前的逻辑水平(debug)"
+      },
+      "2.0.6": {
+        "en": "change adapter type into misc-data",
+        "de": "adaptertyp in misc-daten ändern",
+        "ru": "изменить тип адаптера в misc-data",
+        "pt": "alterar o tipo de adaptador em dados diversos",
+        "nl": "verander adaptertype in misc-data",
+        "fr": "modifier le type d'adaptateur en misc-data",
+        "it": "cambiare il tipo di adattatore in dati misc",
+        "es": "cambio de tipo de adaptador en datos erróneos",
+        "pl": "adapter zmienny",
+        "zh-cn": "b. 变化的变量"
+      },
+      "2.0.5": {
+        "en": "write ack = true in case of additional state is subscribed",
+        "de": "schreiben ack = wahr bei zusätzlichem zustand abonniert",
+        "ru": "написать ack = true в случае дополнительного состояния подписано",
+        "pt": "write ack = true em caso de estado adicional é subscrito",
+        "nl": "schrijf ack = waar in geval van extra staat wordt ingediend",
+        "fr": "écrire ack = true en cas d'état supplémentaire est souscrit",
+        "it": "scrivere ack = vero in caso di stato aggiuntivo è sottoscritto",
+        "es": "escribir ack = verdadero en caso de estado adicional se suscribe",
+        "pl": "ac = prawdziwa w przypadku stanu dodatkowego jest podana do zapisu",
+        "zh-cn": "写包装=在有更多国家的情况下真实情况"
+      },
+      "2.0.4": {
+        "en": "unsubscribe fixed",
+        "de": "abmelden fest",
+        "ru": "отписаться от фиксированной",
+        "pt": "cancelamento de assinatura",
+        "nl": "onbeschrijf gerepareerd",
+        "fr": "unsubscribe fixed",
+        "it": "annullare l'iscrizione",
+        "es": "suscripción fija",
+        "pl": "nieczytelny",
+        "zh-cn": "未作规定的"
+      },
+      "2.0.3": {
+        "en": "readme fixed",
+        "de": "Readme behoben",
+        "ru": "исправлен файл readme",
+        "pt": "leia-me corrigido",
+        "nl": "leesmij opgelost",
+        "fr": "Lisez-moi corrigé",
+        "it": "readme risolto",
+        "es": "Léame corregido",
+        "pl": "czytaj mi naprawiono",
+        "zh-cn": "自述文件已修复"
+      }
     },
-    "native": {
-        "deleteStatesWithDisable": false
+    "title": "Bidirectional counter",
+    "titleLang": {
+      "en": "Bidirectional counter",
+      "de": "Bidirektionaler Zähler",
+      "ru": "Двунаправленный счетчик",
+      "pt": "Contador bidirecional",
+      "nl": "Bidirectionele teller",
+      "fr": "Compteur bidirectionnel",
+      "it": "Contatore bidirezionale",
+      "es": "Contador bidireccional",
+      "pl": "Licznik dwukierunkowy",
+      "zh-cn": "双向计数器"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.subscribedStatesCount",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "Count of subscribed states",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": 0
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "Counter to separate consumption (positive changes) and deliverd (negative changes)",
+      "de": "Zähler zum separaten Verbrauch (positive Änderungen) und geliefert (negative Änderungen)",
+      "ru": "Счетчик раздельного потребления (положительные изменения) и поставки (отрицательные изменения)",
+      "pt": "Contador para separar o consumo (mudanças positivas) e entregue (mudanças negativas)",
+      "nl": "Teller om verbruik (positieve veranderingen) en afgeleverde (negatieve veranderingen) te scheiden",
+      "fr": "Compteur pour séparer la consommation (variations positives) et la livraison (variations négatives)",
+      "it": "Contatore per separare i consumi (variazioni positive) e erogati (variazioni negative)",
+      "es": "Contador para separar el consumo (cambios positivos) y entregado (cambios negativos)",
+      "pl": "Licznik do oddzielnego zużycia (zmiany dodatnie) i dostarczonego (zmiany ujemne)",
+      "zh-cn": "反对单独消费（积极变化）和交付（消极变化）"
+    },
+    "authors": [
+      "BenAhrdt <bsahrdt@gmail.com>"
+    ],
+    "keywords": [
+      "bidirectional",
+      "Bidirektional",
+      "Consumed",
+      "Bezogen",
+      "delivered",
+      "Geliefert",
+      "counter",
+      "Zähler"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "bidirectional-counter.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/BenAhrdt/ioBroker.bidirectional-counter/main/admin/bidirectional-counter.png",
+    "readme": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "misc-data",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json",
+      "custom": "json"
+    },
+    "supportCustoms": true,
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.0"
+      }
+    ],
+    "dependencies": [
+      {
+        "js-controller": ">=2.0.0"
+      }
     ]
+  },
+  "native": {
+    "deleteStatesWithDisable": false
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.subscribedStatesCount",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "Count of subscribed states",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    }
+  ]
 }
