@@ -1,4 +1,5 @@
 {
+    "type": "panel",
     "i18n": true,
     "items":{
         "deleteStatesWithDisable": {
@@ -9,6 +10,7 @@
         "emptyField":{
             "type":"staticText",
             "newLine": true,
+            "text":"",
             "sm":3
         },
         "infoToCustomConfig": {

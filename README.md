@@ -29,6 +29,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) correction in jsonconfig schema
+
 ### 2.1.0 (2023-04-06)
 * (BenAhrdt) updated to new releasescript
 
