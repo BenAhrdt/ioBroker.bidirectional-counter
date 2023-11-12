@@ -31,8 +31,6 @@ The counter state will increase up from its saved value, when the shelly energy 
 -->
 ### **WORK IN PROGRESS**
 * (BenAhrdt) translation for uk added
-
-### **WORK IN PROGRESS**
 * (BenAhrdt) insert check vor node version >= 16
 
 ### 2.1.1 (2023-11-02)
