@@ -258,22 +258,26 @@ class BidirectionalCounter extends utils.Adapter {
 				if(this.activeStates[id]){
 					if(state.val !== 0 || this.activeStates[id].enableFallbackToZero){
 						const difference = Number(state.val) - this.activeStates[id].lastValue;
+						this.log.debug(`${id} changed from ${this.activeStates[id].lastValue} to ${Number(state.val)} - Difference: ${difference}`);
 						if(difference >= 0){
 							const tempId = this.createStatestring(id) + this.additionalIds.consumed;
 							const tempValue = this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference;
 							this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = tempValue;
 							this.setStateAsync(tempId,tempValue,true);
+							this.log.debug(`${tempId} is set to ${tempValue}`);
 						}
 						else{
 							const tempId = this.createStatestring(id) + this.additionalIds.delivered;
 							const tempValue = this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] - difference;
 							this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = tempValue;
 							this.setStateAsync(tempId,tempValue,true);
+							this.log.debug(`${tempId} is set to ${tempValue}`);
 						}
 						const tempId = this.createStatestring(id) + this.additionalIds.total;
 						const tempValue = this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] + difference;
 						this.activeStatesLastAdditionalValues[this.namespace + "." + tempId] = tempValue;
 						this.setStateAsync(tempId,tempValue,true);
+						this.log.debug(`${tempId} is set to ${tempValue}`);
 					}
 					this.activeStates[id].lastValue = state.val;
 				}
