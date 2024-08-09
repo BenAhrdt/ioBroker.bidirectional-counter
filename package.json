@@ -9,6 +9,7 @@
   "homepage": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter",
   "license": "MIT",
   "keywords": [
+    "ioBroker",
     "bidirectional",
     "Bidirektional",
     "Consumed",

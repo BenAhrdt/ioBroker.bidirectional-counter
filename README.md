@@ -29,6 +29,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) correct changes for check and service Bot
+
 ### 2.1.4 (2024-08-09)
 * (BenAhrdt) changes for check and service Bot
 
