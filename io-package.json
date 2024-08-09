@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.1.3",
+    "version": "2.1.4",
     "news": {
+      "2.1.4": {
+        "en": "changes for check and service Bot",
+        "de": "änderungen bei Überprüfung und Service Botsuana",
+        "ru": "изменения для проверки и обслуживания Bot",
+        "pt": "alterações para verificação e serviço Botão",
+        "nl": "wijzigingen voor controle en service Bot",
+        "fr": "changements pour le contrôle et le service Bot",
+        "it": "modifiche per il controllo e il servizio Bot",
+        "es": "cambios para cheque y servicio Bot",
+        "pl": "zmiany dotyczące kontroli i obsługi Bot Przewodniczący",
+        "uk": "зміни для перевірки та обслуговування Боти",
+        "zh-cn": "检查和服务更改 瓶装"
+      },
       "2.1.3": {
         "en": "debuglogging for changed values added",
         "de": "debuglogging für geänderte werte hinzugefügt",
@@ -80,19 +93,6 @@
         "pl": "profil na stronie logline (ang.)",
         "zh-cn": "固体检查在逻辑前的逻辑水平(debug)",
         "uk": "не перевіряти рівень журналу перед log.debug()"
-      },
-      "2.0.6": {
-        "en": "change adapter type into misc-data",
-        "de": "adaptertyp in misc-daten ändern",
-        "ru": "изменить тип адаптера в misc-data",
-        "pt": "alterar o tipo de adaptador em dados diversos",
-        "nl": "verander adaptertype in misc-data",
-        "fr": "modifier le type d'adaptateur en misc-data",
-        "it": "cambiare il tipo di adattatore in dati misc",
-        "es": "cambio de tipo de adaptador en datos erróneos",
-        "pl": "adapter zmienny",
-        "zh-cn": "b. 变化的变量",
-        "uk": "змінити тип адаптера на misc-data"
       }
     },
     "titleLang": {
