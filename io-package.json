@@ -95,7 +95,6 @@
         "uk": "змінити тип адаптера на misc-data"
       }
     },
-    "title": "Bidirectional counter",
     "titleLang": {
       "en": "Bidirectional counter",
       "de": "Bidirektionaler Zähler",
@@ -126,6 +125,7 @@
       "BenAhrdt <bsahrdt@gmail.com>"
     ],
     "keywords": [
+      "ioBroker",
       "bidirectional",
       "Bidirektional",
       "Consumed",
@@ -145,6 +145,7 @@
     "extIcon": "https://raw.githubusercontent.com/BenAhrdt/ioBroker.bidirectional-counter/main/admin/bidirectional-counter.png",
     "readme": "https://github.com/BenAhrdt/ioBroker.bidirectional-counter/blob/main/README.md",
     "loglevel": "info",
+    "tier": 2,
     "mode": "daemon",
     "type": "misc-data",
     "compact": true,

@@ -30,6 +30,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 ### 2.1.3 (2023-11-14)
+* (BenAhrdt) changes for check and service Bot
+
+### 2.1.3 (2023-11-14)
 * (BenAhrdt) debuglogging for changed values added
 
 ### 2.1.2 (2023-11-12)
@@ -85,7 +88,7 @@ The counter state will increase up from its saved value, when the shelly energy 
 ## License
 MIT License
 
-Copyright (c) 2023 BenAhrdt <bsahrdt@gmail.com>
+Copyright (c) 2024 BenAhrdt <bsahrdt@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
