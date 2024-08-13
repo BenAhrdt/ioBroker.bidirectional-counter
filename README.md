@@ -30,7 +30,8 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (BenAhrdt) correct changes for check and service Bot
+* (BenAhrdt) Update Dependencies: "js-controller": ">=5.0.19"
+  Check your System before installing new Version
 
 ### 2.1.4 (2024-08-09)
 * (BenAhrdt) changes for check and service Bot
