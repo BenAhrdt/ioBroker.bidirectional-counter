@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "news": {
+      "2.2.1": {
+        "en": "changed schema and responsive tags",
+        "de": "geänderte schema- und responsive tags",
+        "ru": "измененная схема и ответные теги",
+        "pt": "schema alterado e tags responsivas",
+        "nl": "veranderd schema en responsieve tags",
+        "fr": "changement de schéma et tags responsive",
+        "it": "cambiato schema e tag reattivi",
+        "es": "cambio de esquema y etiquetas sensibles",
+        "pl": "zmieniony schemat i reagujące znaczniki",
+        "uk": "змінено schema і чуйні теги",
+        "zh-cn": "更改策略和响应标记"
+      },
       "2.2.0": {
         "en": "* Update Dependencies: \"js-controller\": \">=5.0.19\"\n  Check your System before installing new Version",
         "de": "* Update Dependencies: \"js-controller\": \">=5.0.19\"\nÜberprüfen Sie Ihr System vor der Installation neuer Version",
@@ -80,19 +93,6 @@
         "pl": "uaktualnić do nowszych wersji",
         "uk": "оновлений до нового релізу",
         "zh-cn": "新的新闻稿的更新"
-      },
-      "2.0.8": {
-        "en": "readme updated with paypal link",
-        "de": "readme aktualisiert mit paypal link",
-        "ru": "readme обновлено с помощью paypal link",
-        "pt": "readme atualizado com link paypal",
-        "nl": "vertaling:",
-        "fr": "readme mise à jour avec paypal link",
-        "it": "aggiornato con paypal link",
-        "es": "readme actualizado con enlace paypal",
-        "pl": "odczytać",
-        "zh-cn": "薪金联系更新",
-        "uk": "readme оновлено за допомогою посилання PayPal"
       }
     },
     "titleLang": {
