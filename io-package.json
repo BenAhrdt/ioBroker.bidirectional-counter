@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.2.1",
+    "version": "2.3.0",
     "news": {
+      "2.3.0": {
+        "en": "update eslint",
+        "de": "update eslint",
+        "ru": "обновление eslint",
+        "pt": "atualização eslint",
+        "nl": "eslint bijwerken",
+        "fr": "mettre à jour eslint",
+        "it": "aggiornamento eslint",
+        "es": "update eslint",
+        "pl": "update eslint",
+        "uk": "оновлення eslint",
+        "zh-cn": "更新埃斯林特"
+      },
       "2.2.1": {
         "en": "changed schema and responsive tags",
         "de": "geänderte schema- und responsive tags",
@@ -80,19 +93,6 @@
         "pl": "poprawka w schemacie jsonconfig",
         "uk": "корекція в jsonconfig schema",
         "zh-cn": "更正"
-      },
-      "2.1.0": {
-        "en": "updated to new releasescript",
-        "de": "aktualisiert zum neuen releasescript",
-        "ru": "обновлено к новому релизу",
-        "pt": "atualizado para novo releasescript",
-        "nl": "vertaling:",
-        "fr": "mise à jour du nouveau communiqué",
-        "it": "aggiornato al nuovo releasescript",
-        "es": "actualizados a nuevos módulos de lanzamiento",
-        "pl": "uaktualnić do nowszych wersji",
-        "uk": "оновлений до нового релізу",
-        "zh-cn": "新的新闻稿的更新"
       }
     },
     "titleLang": {
