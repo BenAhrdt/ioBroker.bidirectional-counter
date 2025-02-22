@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.3.0",
+    "version": "2.4.0",
     "news": {
+      "2.4.0": {
+        "en": "update admin and js-controller dependencies",
+        "de": "admin- und js-controller-abhängigkeiten aktualisieren",
+        "ru": "обновление зависимостей администратора и js-контроллера",
+        "pt": "atualizar as dependências admin e js-controller",
+        "nl": "admin en js-controller afhankelijkheden bijwerken",
+        "fr": "mettre à jour les dépendances admin et js-controller",
+        "it": "aggiornare le dipendenze di admin e js-controller",
+        "es": "actualizar las dependencias de administración y js-controller",
+        "pl": "aktualizacja zależności admin i js- kontroler",
+        "uk": "оновлення залежності адміністратора та js-controller",
+        "zh-cn": "更新管理员和js控制器依赖性"
+      },
       "2.3.0": {
         "en": "update eslint",
         "de": "update eslint",
@@ -80,19 +93,6 @@
         "pl": "tłumaczenie dla uk dodała\ninstrukcja wejściowa w wersji węzłowej >== 16",
         "uk": "переклад для uk додано\nвставити перевірку вихрового вузла версії >= 16 мар",
         "zh-cn": "增 编\n加 检查 16"
-      },
-      "2.1.1": {
-        "en": "correction in jsonconfig schema",
-        "de": "korrektur im jsonconfig schema",
-        "ru": "коррекция в jsonconfig schema",
-        "pt": "correção em jsonconfig schema",
-        "nl": "vertaling:",
-        "fr": "correction dans le schéma de jsonconfig",
-        "it": "correzione nello schema jsonconfig",
-        "es": "corrección en jsonconfig schema",
-        "pl": "poprawka w schemacie jsonconfig",
-        "uk": "корекція в jsonconfig schema",
-        "zh-cn": "更正"
       }
     },
     "titleLang": {

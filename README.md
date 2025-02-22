@@ -29,7 +29,7 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 2.4.0 (2025-02-22)
 * (BenAhrdt) update admin and js-controller dependencies
 
 ### 2.3.0 (2024-12-05)
