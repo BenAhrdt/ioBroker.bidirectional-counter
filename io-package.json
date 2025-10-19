@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.4.0",
+    "version": "2.5.0",
     "news": {
+      "2.5.0": {
+        "en": "update Authentication NPM\nupdate lint to 2.1.0\nupdate testing removeing defDependencies\nupdate dependencie core\nupdate dependencie to node >= 20\nupdate testing to 24.x",
+        "de": "update Authentication NPM\nupdate lint auf 2.1.0\nupdate-Tests entfernen defDependencies\naktualisierung abhängiger kern\nupdate abhängigencier to node >= 20\nupdate-tests auf 24.x",
+        "ru": "обновление Authentication NPM\nобновление lint до 2.1.0\nтестирование обновлений для удаления defDependencies\nобновление dependencie core\nобновление зависимых узлов >= 20\nтестирование обновлений до 24.x",
+        "pt": "atualizar a autenticação NPM\natualizar o lint para 2.1.0\natualizar testes removendo defDependencies\natualizar o núcleo dependente\natualização dependente para nó >= 20\natualização de testes para 24.x",
+        "nl": "authenticatie NPM bijwerken\nupdate plint naar 2.1.0\nupdate testen verwijderen van defDependencies\nupdate afhankelijke kern\nupdate afhankelijk van knooppunt 20\nupdate testen naar 24.x",
+        "fr": "mettre à jour Authentification NPM\nmettre à jour le lint à 2.1.0\nmettre à jour les tests en supprimant les defDependences\nmise à jour du noyau de dependencie\nmettre à jour dependencie to node >= 20\nmettre à jour les tests à 24.x",
+        "it": "aggiornamento Autenticazione NPM\naggiornamento lint a 2.1.0\naggiornamento test di rimozione dependencies\naggiornamento indipendenza core\naggiornamento della dipendenza dal nodo 20\naggiornamento test a 24.x",
+        "es": "actualización de la autenticación NPM\nactualización de lint a 2.1.0\nactualización de pruebas eliminando defDependencies\nactualización de los recursos básicos\nactualización dependecie de nodo √= 20\npruebas de actualización a 24.x",
+        "pl": "aktualizacja Uwierzytelnianie NPM\naktualizacja lint do 2.1.0\naktualizacja badań usuwania defendencji\nupdate dependencie core\naktualizacja zależnego do węzła > = 20\naktualizacja testów do 24.x",
+        "uk": "оновлення аутентифікації NPM\nдо 2.1.0\nоновлення тестування видалення DefDependencies\nоновлення значення залежностей\nоновлення залежності до вершини >= 20 хв\nтестування оновлення до 24.x",
+        "zh-cn": "更新认证国家预防机制\n更新到 2.1.0\n更新测试删除依赖性\n更新依赖核心\n更新依赖到节点qq 20 (简体中文)\n更新测试为 24.x"
+      },
       "2.4.0": {
         "en": "update admin and js-controller dependencies",
         "de": "admin- und js-controller-abhängigkeiten aktualisieren",
@@ -80,19 +93,6 @@
         "pl": "debuglogowanie zmieniających się wartości dodaje dodanie",
         "uk": "видалення змінних значень",
         "zh-cn": "b. 降低变化的价值观"
-      },
-      "2.1.2": {
-        "en": "translation for uk added\ninsert check vor node version >= 16",
-        "de": "übersetzung für uk zusätzlich\nkontrollieren vor knoten version >= anhang",
-        "ru": "перевод для uk добавлен\nвставить проверить vor node версия >= 16, 16, 16",
-        "pt": "tradução para uk adicionado\ninsert check vor node version >= 16",
-        "nl": "vertaling:\ninsert check vor node versie 16",
-        "fr": "traduction pour uk ajouté\ninsert check vor node version phy= 16",
-        "it": "traduzione per uk aggiunto\n>= 16",
-        "es": "traducción para uk añadido\nintroducir ver la versión del nodo vor 16",
-        "pl": "tłumaczenie dla uk dodała\ninstrukcja wejściowa w wersji węzłowej >== 16",
-        "uk": "переклад для uk додано\nвставити перевірку вихрового вузла версії >= 16 мар",
-        "zh-cn": "增 编\n加 检查 16"
       }
     },
     "titleLang": {
