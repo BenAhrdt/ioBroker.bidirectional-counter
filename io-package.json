@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.0",
+    "version": "2.5.1",
     "news": {
+      "2.5.1": {
+        "en": "* New Calculation in case of fallback to zero and go back to some value.\n             Remember the last Value for counting the difference",
+        "de": "* Neue Berechnung bei Rückfall auf Null und zurück zu einem bestimmten Wert.\nDenken Sie an den letzten Wert für die Zählung der Differenz",
+        "ru": "* Новый расчет в случае возврата к нулю и возврата к некоторому значению.\nЗапомните последнее значение для подсчета разницы",
+        "pt": "* Novo Cálculo em caso de recuo para zero e voltar para algum valor.\nRecordar o último valor para contar a diferença",
+        "nl": "* Nieuwe berekening in geval van terugval naar nul en ga terug naar een bepaalde waarde.\nOnthoud de laatste waarde voor het tellen van het verschil",
+        "fr": "* Nouveau calcul en cas de retour à zéro et retour à une certaine valeur.\nSouvenez-vous de la dernière valeur pour compter la différence",
+        "it": "* Nuova Calcolo in caso di fallback a zero e tornare ad un certo valore.\nRicorda l'ultimo Valore per contare la differenza",
+        "es": "* Nueva cálculo en caso de retroceso a cero y volver a algún valor.\nRecuerde el último valor para contar la diferencia",
+        "pl": "* Nowe obliczenia w przypadku upadku do zera i wrócić do jakiejś wartości.\nZapamiętaj ostatnią wartość do liczenia różnicy",
+        "uk": "* Новий розрахунок при поверненні до нуля і повернутися до певного значення.\nПам'ятайте останнє значення для підрахунку різниці",
+        "zh-cn": "* 新的计算值如果回落到零并返回到一定值.\n记住计算差值的最后值"
+      },
       "2.5.0": {
         "en": "update Authentication NPM\nupdate lint to 2.1.0\nupdate testing removeing defDependencies\nupdate dependencie core\nupdate dependencie to node >= 20\nupdate testing to 24.x",
         "de": "update Authentication NPM\nupdate lint auf 2.1.0\nupdate-Tests entfernen defDependencies\naktualisierung abhängiger kern\nupdate abhängigencier to node >= 20\nupdate-tests auf 24.x",
@@ -80,19 +93,6 @@
         "pl": "zmiany dotyczące kontroli i obsługi Bot Przewodniczący",
         "uk": "зміни для перевірки та обслуговування Боти",
         "zh-cn": "检查和服务更改 瓶装"
-      },
-      "2.1.3": {
-        "en": "debuglogging for changed values added",
-        "de": "debuglogging für geänderte werte hinzugefügt",
-        "ru": "отключение для добавленных значений",
-        "pt": "debuglogging para valores alterados adicionados",
-        "nl": "vernietiging voor veranderingen",
-        "fr": "debuglogging for changed values added",
-        "it": "debuglogging per valori modificati",
-        "es": "depuración para valores cambiados añadidos",
-        "pl": "debuglogowanie zmieniających się wartości dodaje dodanie",
-        "uk": "видалення змінних значень",
-        "zh-cn": "b. 降低变化的价值观"
       }
     },
     "titleLang": {
