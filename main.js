@@ -7,6 +7,7 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require('@iobroker/adapter-core');
+const { diff } = require('util');
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -114,6 +115,7 @@ class BidirectionalCounter extends utils.Adapter {
         }
         this.activeStates[id] = {
             lastValue: state.val,
+            valueBeforeZero: undefined,
             enableFallbackToZero: customInfo.enableFallbackToZero,
         };
 
@@ -252,7 +254,17 @@ class BidirectionalCounter extends utils.Adapter {
                 // Check Changes in Foreign states
                 if (this.activeStates[id]) {
                     if (state.val !== 0 || this.activeStates[id].enableFallbackToZero) {
-                        const difference = Number(state.val) - this.activeStates[id].lastValue;
+                        // Build difference
+                        let difference = Number(state.val) - this.activeStates[id].lastValue;
+                        // check wether the difference is smaler from the value before zero, or to zero.
+                        if (this.activeStates[id].valueBeforeZero !== undefined) {
+                            const differenceToValueBeforeZero =
+                                Number(state.val) - this.activeStates[id].valueBeforeZero;
+                            this.activeStates[id].valueBeforeZero = undefined;
+                            if (Math.abs(differenceToValueBeforeZero) < Math.abs(difference)) {
+                                difference = differenceToValueBeforeZero;
+                            }
+                        }
                         this.log.debug(
                             `${id} changed from ${this.activeStates[id].lastValue} to ${Number(state.val)} - Difference: ${difference}`,
                         );
@@ -277,6 +289,8 @@ class BidirectionalCounter extends utils.Adapter {
                         this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] = tempValue;
                         this.setStateAsync(tempId, tempValue, true);
                         this.log.debug(`${tempId} is set to ${tempValue}`);
+                    } else if (this.activeStates[id].valueBeforeZero === undefined) {
+                        this.activeStates[id].valueBeforeZero = this.activeStates[id].lastValue;
                     }
                     this.activeStates[id].lastValue = state.val;
                 }

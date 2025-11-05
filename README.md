@@ -29,6 +29,10 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) New Calculation in case of fallback to zero and go back to some value.
+             Remember the last Value for counting the difference
+
 ### 2.5.0 (2025-10-19)
 * (BenAhrdt) update Authentication NPM
 * (BenAhrdt) update lint to 2.1.0
