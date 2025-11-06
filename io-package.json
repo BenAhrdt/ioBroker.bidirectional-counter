@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.1",
+    "version": "2.5.2",
     "news": {
+      "2.5.2": {
+        "en": "logging fallback optional as warning",
+        "de": "logging fallback optional als warnung",
+        "ru": "необязательное восстановление лесозаготовок в качестве предупреждения",
+        "pt": "registro de retrocesso opcional como aviso",
+        "nl": "logging terugval optioneel als waarschuwing",
+        "fr": "l'enregistrement du recul facultatif comme avertissement",
+        "it": "logging fallback opzionale come avvertimento",
+        "es": "caída de registro opcional como advertencia",
+        "pl": "logowanie awaryjne opcjonalne jako ostrzeżenie",
+        "uk": "зареєструвати пароль необов'язково, як попередження",
+        "zh-cn": "登录后退可选作为警告"
+      },
       "2.5.1": {
         "en": "* New Calculation in case of fallback to zero and go back to some value.\n             Remember the last Value for counting the difference",
         "de": "* Neue Berechnung bei Rückfall auf Null und zurück zu einem bestimmten Wert.\nDenken Sie an den letzten Wert für die Zählung der Differenz",
@@ -80,19 +93,6 @@
         "pl": "* Update Dependences: \"js- controller\": \"> = 5.0.19\"\nSprawdź system przed zainstalowaniem nowej wersji",
         "uk": "* Оновлення залежностей: \"js-controller\": \">=5.0.19\"\nПеревірити систему до встановлення нової версії",
         "zh-cn": "* 更新属:\"js-controller\":\">=5.0.19\"\n在安装新版本前检查您的系统"
-      },
-      "2.1.4": {
-        "en": "changes for check and service Bot",
-        "de": "änderungen bei Überprüfung und Service Botsuana",
-        "ru": "изменения для проверки и обслуживания Bot",
-        "pt": "alterações para verificação e serviço Botão",
-        "nl": "wijzigingen voor controle en service Bot",
-        "fr": "changements pour le contrôle et le service Bot",
-        "it": "modifiche per il controllo e il servizio Bot",
-        "es": "cambios para cheque y servicio Bot",
-        "pl": "zmiany dotyczące kontroli i obsługi Bot Przewodniczący",
-        "uk": "зміни для перевірки та обслуговування Боти",
-        "zh-cn": "检查和服务更改 瓶装"
       }
     },
     "titleLang": {
