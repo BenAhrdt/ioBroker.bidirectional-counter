@@ -7,5 +7,7 @@
     "valueName": "name",
     "valueNameTooltip": "inset the Name of the state, which will be displayed in the channel folder later.",
     "deleteStateWithDisableText": "delete state with disable",
-    "infoToCustomConfiglabel": "do configuration in custom-config of a state"
+    "infoToCustomConfiglabel": "do configuration in custom-config of a state",
+    "logFallbackAsWarning": "log fallback as warning",
+    "logFallbackAsWarningTooltip": "enable this option to to log the fallback to zero and the next Value as warning"
 }

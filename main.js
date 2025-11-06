@@ -116,6 +116,7 @@ class BidirectionalCounter extends utils.Adapter {
             lastValue: state.val,
             valueBeforeZero: undefined,
             enableFallbackToZero: customInfo.enableFallbackToZero,
+            logFallbackAsWarning: customInfo.logFallbackAsWarning,
         };
 
         // Create adapter internal object
@@ -263,6 +264,11 @@ class BidirectionalCounter extends utils.Adapter {
                             if (Math.abs(differenceToValueBeforeZero) < Math.abs(difference)) {
                                 difference = differenceToValueBeforeZero;
                             }
+                            if (this.activeStates[id].logFallbackAsWarning) {
+                                this.log.warn(`the id: ${id} returns from zero with value ${Number(state.val)}`);
+                            } else {
+                                this.log.info(`the id: ${id} returns from zero with value ${Number(state.val)}`);
+                            }
                         }
                         this.log.debug(
                             `${id} changed from ${this.activeStates[id].lastValue} to ${Number(state.val)} - Difference: ${difference}`,
@@ -290,6 +296,11 @@ class BidirectionalCounter extends utils.Adapter {
                         this.log.debug(`${tempId} is set to ${tempValue}`);
                     } else if (this.activeStates[id].valueBeforeZero === undefined) {
                         this.activeStates[id].valueBeforeZero = this.activeStates[id].lastValue;
+                        if (this.activeStates[id].logFallbackAsWarning) {
+                            this.log.warn(`the id: ${id} is fallback to zero`);
+                        } else {
+                            this.log.info(`the id: ${id} is fallback to zero`);
+                        }
                     }
                     this.activeStates[id].lastValue = state.val;
                 }

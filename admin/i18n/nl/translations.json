@@ -1,10 +1,12 @@
 {
-    "counterSettings": "teller instellingen",
-    "justTypeNumber": "Let op, alleen datapunten van typenummer kunnen worden geselecteerd",
     "alowNull": "punt van nul toestaan",
     "alowNullTooltip": "Stel bij selectie van dit veld 0 in op een geldige waarde. ",
-    "valueName": "naam",
-    "valueNameTooltip": "plaats de naam van de staat, die later in de kanaalmap wordt weergegeven.",
+    "counterSettings": "teller instellingen",
     "deleteStateWithDisableText": "status verwijderen met uitschakelen",
-    "infoToCustomConfiglabel": "doe configuratie in aangepaste configuratie van een staat"
+    "infoToCustomConfiglabel": "doe configuratie in aangepaste configuratie van een staat",
+    "justTypeNumber": "Let op, alleen datapunten van typenummer kunnen worden geselecteerd",
+    "logFallbackAsWarning": "log fallback als waarschuwing",
+    "logFallbackAsWarningTooltip": "schakel deze optie in om de terugval naar nul en de volgende waarde als waarschuwing te registreren",
+    "valueName": "naam",
+    "valueNameTooltip": "plaats de naam van de staat, die later in de kanaalmap wordt weergegeven."
 }

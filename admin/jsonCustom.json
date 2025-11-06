@@ -20,7 +20,13 @@
       "label": "alowNull",
       "tooltip": "alowNullTooltip",
       "hidden": "customObj.common.type !== 'number'",
-      "sm":3
+      "sm":4
+    },
+    "logFallbackAsWarning": {
+      "type": "checkbox",
+      "label": "logFallbackAsWarning",
+      "tooltip": "logFallbackAsWarningTooltip",
+      "sm":4
     },
     "channelName": {
       "type": "text",

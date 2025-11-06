@@ -1,10 +1,12 @@
 {
-    "counterSettings": "impostazioni del contatore",
-    "justTypeNumber": "Attenzione, possono essere selezionati solo punti dati di tipo numero",
     "alowNull": "consentire punto zero",
     "alowNullTooltip": "Con la selezione di questo campo, impostare 0 su un valore valido. ",
-    "valueName": "nome",
-    "valueNameTooltip": "inserire il Nome dello stato, che verrà visualizzato nella cartella del canale in seguito.",
+    "counterSettings": "impostazioni del contatore",
     "deleteStateWithDisableText": "elimina lo stato con disabilita",
-    "infoToCustomConfiglabel": "eseguire la configurazione nella configurazione personalizzata di uno stato"
+    "infoToCustomConfiglabel": "eseguire la configurazione nella configurazione personalizzata di uno stato",
+    "justTypeNumber": "Attenzione, possono essere selezionati solo punti dati di tipo numero",
+    "logFallbackAsWarning": "registra il fallback come avviso",
+    "logFallbackAsWarningTooltip": "abilitare questa opzione per registrare il fallback su zero e il valore successivo come avviso",
+    "valueName": "nome",
+    "valueNameTooltip": "inserire il Nome dello stato, che verrà visualizzato nella cartella del canale in seguito."
 }

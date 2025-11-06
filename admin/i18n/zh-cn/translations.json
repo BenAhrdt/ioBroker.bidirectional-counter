@@ -1,10 +1,12 @@
 {
-    "counterSettings": "计数器设置",
-    "justTypeNumber": "注意，只能选择类型编号的数据点",
     "alowNull": "允许零点",
     "alowNullTooltip": "选择此字段，将 0 设置为有效值。 ",
-    "valueName": "姓名",
-    "valueNameTooltip": "插入状态的名称，稍后将显示在通道文件夹中。",
+    "counterSettings": "计数器设置",
     "deleteStateWithDisableText": "使用禁用删除状态",
-    "infoToCustomConfiglabel": "在状态的自定义配置中进行配置"
+    "infoToCustomConfiglabel": "在状态的自定义配置中进行配置",
+    "justTypeNumber": "注意，只能选择类型编号的数据点",
+    "logFallbackAsWarning": "将回退记录为警告",
+    "logFallbackAsWarningTooltip": "启用此选项可将回退记录为零，并将下一个值记录为警告",
+    "valueName": "姓名",
+    "valueNameTooltip": "插入状态的名称，稍后将显示在通道文件夹中。"
 }
