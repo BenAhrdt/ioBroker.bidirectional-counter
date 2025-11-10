@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.3",
+    "version": "2.5.4",
     "news": {
+      "2.5.4": {
+        "en": "set raw common.writable = false",
+        "de": "roh gebräuchlich. writable = falsch",
+        "ru": "обычный набор. письменный = ложный",
+        "pt": "definir comum cru. writable = false",
+        "nl": "zet ruwe gewone. beschrijfbaar = onwaar",
+        "fr": "comme d'habitude. = faux",
+        "it": "set grezzo comune. writable = falso",
+        "es": "set raw common. writable = false",
+        "pl": "ustaw surowe wspólne. writable = false",
+        "uk": "встановити сирий загальний. невірний = false",
+        "zh-cn": "设置原始常见。 可写=虚假"
+      },
       "2.5.3": {
         "en": "adding raw value for every counted value",
         "de": "hinzufügen von rohwert für jeden gezählten wert",
@@ -80,19 +93,6 @@
         "pl": "update eslint",
         "uk": "оновлення eslint",
         "zh-cn": "更新埃斯林特"
-      },
-      "2.2.1": {
-        "en": "changed schema and responsive tags",
-        "de": "geänderte schema- und responsive tags",
-        "ru": "измененная схема и ответные теги",
-        "pt": "schema alterado e tags responsivas",
-        "nl": "veranderd schema en responsieve tags",
-        "fr": "changement de schéma et tags responsive",
-        "it": "cambiato schema e tag reattivi",
-        "es": "cambio de esquema y etiquetas sensibles",
-        "pl": "zmieniony schemat i reagujące znaczniki",
-        "uk": "змінено schema і чуйні теги",
-        "zh-cn": "更改策略和响应标记"
       }
     },
     "titleLang": {
