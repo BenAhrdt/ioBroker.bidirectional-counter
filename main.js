@@ -141,7 +141,7 @@ class BidirectionalCounter extends utils.Adapter {
                     role: common.role,
                     unit: common.unit,
                     read: true,
-                    write: true,
+                    write: myId !== this.additionalIds.raw.substring(1, this.additionalIds.raw.length),
                     def: 0,
                 },
                 native: {},

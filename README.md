@@ -29,6 +29,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) set raw common.writable = false
+
 ### 2.5.3 (2025-11-10)
 * (BenAhrdt) adding raw value for every counted value
 
