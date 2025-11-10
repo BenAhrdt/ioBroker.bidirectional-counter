@@ -33,6 +33,7 @@ class BidirectionalCounter extends utils.Adapter {
             consumed: '.consumed',
             delivered: '.delivered',
             total: '.total',
+            raw: '.raw',
         };
 
         // define arrays for selected states and calculation
@@ -267,7 +268,7 @@ class BidirectionalCounter extends utils.Adapter {
                             if (this.activeStates[id].logFallbackAsWarning) {
                                 this.log.warn(`the id: ${id} returns from zero with value ${Number(state.val)}`);
                             } else {
-                                this.log.info(`the id: ${id} returns from zero with value ${Number(state.val)}`);
+                                this.log.debug(`the id: ${id} returns from zero with value ${Number(state.val)}`);
                             }
                         }
                         this.log.debug(
@@ -278,30 +279,32 @@ class BidirectionalCounter extends utils.Adapter {
                             const tempValue =
                                 this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] + difference;
                             this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] = tempValue;
-                            this.setStateAsync(tempId, tempValue, true);
+                            this.setState(tempId, tempValue, true);
                             this.log.debug(`${tempId} is set to ${tempValue}`);
                         } else {
                             const tempId = this.createStatestring(id) + this.additionalIds.delivered;
                             const tempValue =
                                 this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] - difference;
                             this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] = tempValue;
-                            this.setStateAsync(tempId, tempValue, true);
+                            this.setState(tempId, tempValue, true);
                             this.log.debug(`${tempId} is set to ${tempValue}`);
                         }
                         const tempId = this.createStatestring(id) + this.additionalIds.total;
                         const tempValue =
                             this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] + difference;
                         this.activeStatesLastAdditionalValues[`${this.namespace}.${tempId}`] = tempValue;
-                        this.setStateAsync(tempId, tempValue, true);
+                        this.setState(tempId, tempValue, true);
                         this.log.debug(`${tempId} is set to ${tempValue}`);
                     } else if (this.activeStates[id].valueBeforeZero === undefined) {
                         this.activeStates[id].valueBeforeZero = this.activeStates[id].lastValue;
                         if (this.activeStates[id].logFallbackAsWarning) {
                             this.log.warn(`the id: ${id} is fallback to zero`);
                         } else {
-                            this.log.info(`the id: ${id} is fallback to zero`);
+                            this.log.debug(`the id: ${id} is fallback to zero`);
                         }
                     }
+                    const tempId = this.createStatestring(id) + this.additionalIds.raw;
+                    this.setState(tempId, state.val, true);
                     this.activeStates[id].lastValue = state.val;
                 }
 
