@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.4",
+    "version": "2.5.5",
     "news": {
+      "2.5.5": {
+        "en": "implements max difference value",
+        "de": "max differenzwert implementiert",
+        "ru": "реализует значение максимальной разности",
+        "pt": "implementa o valor máximo da diferença",
+        "nl": "implementeert maximale verschilwaarde",
+        "fr": "implémente la valeur de différence maximale",
+        "it": "implementa il valore di massima differenza",
+        "es": "implementa el valor máximo de diferencia",
+        "pl": "implementuje maksymalną wartość różnicy",
+        "uk": "реалізує максимальну різницю",
+        "zh-cn": "执行最大差值"
+      },
       "2.5.4": {
         "en": "set raw common.writable = false",
         "de": "roh gebräuchlich. writable = falsch",
@@ -80,19 +93,6 @@
         "pl": "aktualizacja zależności admin i js- kontroler",
         "uk": "оновлення залежності адміністратора та js-controller",
         "zh-cn": "更新管理员和js控制器依赖性"
-      },
-      "2.3.0": {
-        "en": "update eslint",
-        "de": "update eslint",
-        "ru": "обновление eslint",
-        "pt": "atualização eslint",
-        "nl": "eslint bijwerken",
-        "fr": "mettre à jour eslint",
-        "it": "aggiornamento eslint",
-        "es": "update eslint",
-        "pl": "update eslint",
-        "uk": "оновлення eslint",
-        "zh-cn": "更新埃斯林特"
       }
     },
     "titleLang": {

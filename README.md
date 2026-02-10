@@ -29,7 +29,7 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 2.5.5 (2026-02-10)
 * (BenAhrdt) implements max difference value
 
 ### 2.5.4 (2025-11-10)
