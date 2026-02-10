@@ -7,6 +7,8 @@
     "justTypeNumber": "Atención, solo se pueden seleccionar puntos de datos del número de tipo",
     "logFallbackAsWarning": "registrar el respaldo como advertencia",
     "logFallbackAsWarningTooltip": "habilite esta opción para registrar el retorno a cero y el siguiente valor como advertencia",
+    "maxDifference": "diferencia máxima",
+    "maxDifferenceTooltip": "diferencia máxima que podría detectarse. (0 para desactivar esta función)",
     "valueName": "nombre",
     "valueNameTooltip": "inserte el nombre del estado, que se mostrará en la carpeta del canal más adelante."
 }

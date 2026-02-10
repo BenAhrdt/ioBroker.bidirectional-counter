@@ -5,7 +5,8 @@
       "newLine": true,
       "type": "header",
       "text": "counterSettings",
-      "sm": 20
+      "sm": 20,
+      "size": 3
     },
     "warningText": {
       "newLine": true,
@@ -34,6 +35,14 @@
       "hidden": "customObj.common.type !== 'number'",
       "tooltip": "valueNameTooltip",
       "sm":3
+    },
+    "maxDifference": {
+      "type": "number",
+      "label": "maxDifference",
+      "hidden": "customObj.common.type !== 'number'",
+      "tooltip": "maxDifferenceTooltip",
+      "sm":3,
+      "default": 0
     }
   }
 }

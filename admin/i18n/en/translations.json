@@ -9,5 +9,7 @@
     "deleteStateWithDisableText": "delete state with disable",
     "infoToCustomConfiglabel": "do configuration in custom-config of a state",
     "logFallbackAsWarning": "log fallback as warning",
-    "logFallbackAsWarningTooltip": "enable this option to to log the fallback to zero and the next Value as warning"
+    "logFallbackAsWarningTooltip": "enable this option to to log the fallback to zero and the next Value as warning",
+    "maxDifference": "max difference",
+    "maxDifferenceTooltip": "max difference, that might be detected. (0 for disable this function)"
 }

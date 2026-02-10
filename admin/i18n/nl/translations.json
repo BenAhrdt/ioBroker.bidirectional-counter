@@ -7,6 +7,8 @@
     "justTypeNumber": "Let op, alleen datapunten van typenummer kunnen worden geselecteerd",
     "logFallbackAsWarning": "log fallback als waarschuwing",
     "logFallbackAsWarningTooltip": "schakel deze optie in om de terugval naar nul en de volgende waarde als waarschuwing te registreren",
+    "maxDifference": "maximaal verschil",
+    "maxDifferenceTooltip": "maximale verschil dat kan worden gedetecteerd. (0 voor het uitschakelen van deze functie)",
     "valueName": "naam",
     "valueNameTooltip": "plaats de naam van de staat, die later in de kanaalmap wordt weergegeven."
 }

@@ -7,6 +7,8 @@
     "justTypeNumber": "Atenção, apenas pontos de dados do tipo número podem ser selecionados",
     "logFallbackAsWarning": "registrar fallback como aviso",
     "logFallbackAsWarningTooltip": "habilite esta opção para registrar o fallback para zero e o próximo valor como aviso",
+    "maxDifference": "diferença máxima",
+    "maxDifferenceTooltip": "diferença máxima, que pode ser detectada. (0 para desativar esta função)",
     "valueName": "nome",
     "valueNameTooltip": "insira o Nome do estado, que será exibido na pasta do canal posteriormente."
 }

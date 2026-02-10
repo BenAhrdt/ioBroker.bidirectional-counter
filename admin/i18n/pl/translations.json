@@ -7,6 +7,8 @@
     "justTypeNumber": "Uwaga, można wybrać tylko punkty danych o numerze typu",
     "logFallbackAsWarning": "zaloguj rezerwę jako ostrzeżenie",
     "logFallbackAsWarningTooltip": "włącz tę opcję, aby zapisać powrót do zera i następną wartość jako ostrzeżenie",
+    "maxDifference": "maksymalna różnica",
+    "maxDifferenceTooltip": "maksymalna różnica, jaką można wykryć. (0 dla wyłączenia tej funkcji)",
     "valueName": "nazwać",
     "valueNameTooltip": "wstaw Nazwę stanu, która będzie później wyświetlana w folderze kanału."
 }

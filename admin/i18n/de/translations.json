@@ -7,6 +7,8 @@
     "justTypeNumber": "Achtung, es können nur Datenpunkte vom Typ number ausgewählt werden",
     "logFallbackAsWarning": "Nullpunktsprung als Warnung protokollieren",
     "logFallbackAsWarningTooltip": "Aktivieren Sie diese Option, um den Fallback auf Null und den nächsten Wert als Warnung zu protokollieren",
+    "maxDifference": "maximaler Unterschied",
+    "maxDifferenceTooltip": "Maximaler Unterschied, der erkannt werden könnte. (0 für Deaktivierung dieser Funktion)",
     "valueName": "Name",
     "valueNameTooltip": "Tragen Sie hier den Name des Datenpunkts ein, welcher später in dem übergeordnerten Verzeichnnis angezeigt werden soll."
 }

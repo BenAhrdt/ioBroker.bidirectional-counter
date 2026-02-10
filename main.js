@@ -116,6 +116,7 @@ class BidirectionalCounter extends utils.Adapter {
         this.activeStates[id] = {
             lastValue: state.val,
             valueBeforeZero: undefined,
+            maxDifference: customInfo.maxDifference,
             enableFallbackToZero: customInfo.enableFallbackToZero,
             logFallbackAsWarning: customInfo.logFallbackAsWarning,
         };
@@ -270,6 +271,13 @@ class BidirectionalCounter extends utils.Adapter {
                             } else {
                                 this.log.debug(`the id: ${id} returns from zero with value ${Number(state.val)}`);
                             }
+                        }
+                        if (
+                            this.activeStates[id].maxDifference &&
+                            this.activeStates[id].maxDifference !== 0 &&
+                            this.activeStates[id].maxDifference < Math.abs(difference)
+                        ) {
+                            difference = 0;
                         }
                         this.log.debug(
                             `${id} changed from ${this.activeStates[id].lastValue} to ${Number(state.val)} - Difference: ${difference}`,

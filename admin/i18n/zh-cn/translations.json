@@ -7,6 +7,8 @@
     "justTypeNumber": "注意，只能选择类型编号的数据点",
     "logFallbackAsWarning": "将回退记录为警告",
     "logFallbackAsWarningTooltip": "启用此选项可将回退记录为零，并将下一个值记录为警告",
+    "maxDifference": "最大差异",
+    "maxDifferenceTooltip": "可能检测到的最大差异。 （0表示禁用此功能）",
     "valueName": "姓名",
     "valueNameTooltip": "插入状态的名称，稍后将显示在通道文件夹中。"
 }

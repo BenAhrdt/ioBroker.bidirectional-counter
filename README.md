@@ -29,6 +29,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) implements max difference value
+
 ### 2.5.4 (2025-11-10)
 * (BenAhrdt) set raw common.writable = false
 
