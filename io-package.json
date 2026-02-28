@@ -157,12 +157,12 @@
     "supportCustoms": true,
     "globalDependencies": [
       {
-        "admin": ">=7.6.17"
+        "admin": ">=7.2.22"
       }
     ],
     "dependencies": [
       {
-        "js-controller": ">=7.7.22"
+        "js-controller": ">=7.0.6"
       }
     ]
   },
