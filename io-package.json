@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.7",
+    "version": "2.5.8",
     "news": {
+      "2.5.8": {
+        "en": "bugfix 2.0 dependencies",
+        "de": "bugfix 2.0 abhängigkeiten",
+        "ru": "багфикс 2.0 зависимостей",
+        "pt": "dependências do bugfix 2.0",
+        "nl": "bugfix 2.0 afhankelijkheden",
+        "fr": "dépendances bugfix 2.0",
+        "it": "bugfix 2.0 dipendenze",
+        "es": "bugfix 2.0 dependencias",
+        "pl": "zależności bugfix 2.0",
+        "uk": "виправлення помилок 2.0",
+        "zh-cn": "错误修正 2.0 依赖性"
+      },
       "2.5.7": {
         "en": "bugfix dependencies",
         "de": "bugfix abhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "logowanie awaryjne opcjonalne jako ostrzeżenie",
         "uk": "зареєструвати пароль необов'язково, як попередження",
         "zh-cn": "登录后退可选作为警告"
-      },
-      "2.5.1": {
-        "en": "* New Calculation in case of fallback to zero and go back to some value.\n             Remember the last Value for counting the difference",
-        "de": "* Neue Berechnung bei Rückfall auf Null und zurück zu einem bestimmten Wert.\nDenken Sie an den letzten Wert für die Zählung der Differenz",
-        "ru": "* Новый расчет в случае возврата к нулю и возврата к некоторому значению.\nЗапомните последнее значение для подсчета разницы",
-        "pt": "* Novo Cálculo em caso de recuo para zero e voltar para algum valor.\nRecordar o último valor para contar a diferença",
-        "nl": "* Nieuwe berekening in geval van terugval naar nul en ga terug naar een bepaalde waarde.\nOnthoud de laatste waarde voor het tellen van het verschil",
-        "fr": "* Nouveau calcul en cas de retour à zéro et retour à une certaine valeur.\nSouvenez-vous de la dernière valeur pour compter la différence",
-        "it": "* Nuova Calcolo in caso di fallback a zero e tornare ad un certo valore.\nRicorda l'ultimo Valore per contare la differenza",
-        "es": "* Nueva cálculo en caso de retroceso a cero y volver a algún valor.\nRecuerde el último valor para contar la diferencia",
-        "pl": "* Nowe obliczenia w przypadku upadku do zera i wrócić do jakiejś wartości.\nZapamiętaj ostatnią wartość do liczenia różnicy",
-        "uk": "* Новий розрахунок при поверненні до нуля і повернутися до певного значення.\nПам'ятайте останнє значення для підрахунку різниці",
-        "zh-cn": "* 新的计算值如果回落到零并返回到一定值.\n记住计算差值的最后值"
       }
     },
     "titleLang": {
