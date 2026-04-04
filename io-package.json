@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.8",
+    "version": "2.5.9",
     "news": {
+      "2.5.9": {
+        "en": "add deviceManager",
+        "de": "gerätManager hinzufügen",
+        "ru": "добавить DeviceManager",
+        "pt": "adicionar dispositivoManager",
+        "nl": "apparaatbeheer toevoegen",
+        "fr": "ajouter deviceManager",
+        "it": "aggiungere dispositivoManager",
+        "es": "añadir dispositivoManager",
+        "pl": "add deviceManager",
+        "uk": "додати пристрійManager",
+        "zh-cn": "添加设备管理器"
+      },
       "2.5.8": {
         "en": "bugfix 2.0 dependencies",
         "de": "bugfix 2.0 abhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "wartość dodana dla każdej liczonej wartości",
         "uk": "додаючи сире значення для кожного підрахунку значення",
         "zh-cn": "增加每个计值的原始价值"
-      },
-      "2.5.2": {
-        "en": "logging fallback optional as warning",
-        "de": "logging fallback optional als warnung",
-        "ru": "необязательное восстановление лесозаготовок в качестве предупреждения",
-        "pt": "registro de retrocesso opcional como aviso",
-        "nl": "logging terugval optioneel als waarschuwing",
-        "fr": "l'enregistrement du recul facultatif comme avertissement",
-        "it": "logging fallback opzionale come avvertimento",
-        "es": "caída de registro opcional como advertencia",
-        "pl": "logowanie awaryjne opcjonalne jako ostrzeżenie",
-        "uk": "зареєструвати пароль необов'язково, як попередження",
-        "zh-cn": "登录后退可选作为警告"
       }
     },
     "titleLang": {
