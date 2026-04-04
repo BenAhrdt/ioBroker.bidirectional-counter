@@ -1,14 +1,17 @@
 {
+    "DeviceObject": "Objeto de dispositivo",
     "alowNull": "permitir ponto zero",
     "alowNullTooltip": "Na seleção deste campo, defina 0 como um valor válido. ",
     "counterSettings": "configurações do contador",
     "deleteStateWithDisableText": "excluir estado com desabilitar",
+    "deviceObject": "Objeto de dispositivo",
     "infoToCustomConfiglabel": "fazer configuração em custom-config de um estado",
     "justTypeNumber": "Atenção, apenas pontos de dados do tipo número podem ser selecionados",
     "logFallbackAsWarning": "registrar fallback como aviso",
     "logFallbackAsWarningTooltip": "habilite esta opção para registrar o fallback para zero e o próximo valor como aviso",
     "maxDifference": "diferença máxima",
     "maxDifferenceTooltip": "diferença máxima, que pode ser detectada. (0 para desativar esta função)",
+    "sourceStates": "Estados de origem",
     "valueName": "nome",
     "valueNameTooltip": "insira o Nome do estado, que será exibido na pasta do canal posteriormente."
 }

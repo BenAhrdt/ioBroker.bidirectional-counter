@@ -1,14 +1,17 @@
 {
+    "DeviceObject": "Objet Périphérique",
     "alowNull": "autoriser le point zéro",
     "alowNullTooltip": "Lors de la sélection de ce champ, réglez 0 sur une valeur valide. ",
     "counterSettings": "paramètres du compteur",
     "deleteStateWithDisableText": "supprimer l'état avec désactiver",
+    "deviceObject": "Objet Périphérique",
     "infoToCustomConfiglabel": "faire la configuration dans la configuration personnalisée d'un état",
     "justTypeNumber": "Attention, seuls les points de données de numéro de type peuvent être sélectionnés",
     "logFallbackAsWarning": "enregistrer le repli comme avertissement",
     "logFallbackAsWarningTooltip": "activez cette option pour enregistrer le repli à zéro et la valeur suivante comme avertissement",
     "maxDifference": "différence maximale",
     "maxDifferenceTooltip": "différence maximale, qui pourrait être détectée. (0 pour désactiver cette fonction)",
+    "sourceStates": "États sources",
     "valueName": "Nom",
     "valueNameTooltip": "insérez le nom de l'état, qui sera affiché dans le dossier du canal plus tard."
 }
