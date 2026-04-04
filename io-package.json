@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.10",
+    "version": "2.5.11",
     "news": {
+      "2.5.11": {
+        "en": "sort display in card",
+        "de": "sortieranzeige in der karte",
+        "ru": "сортировать дисплей в карточку",
+        "pt": "ordenar a exibição na carta",
+        "nl": "scherm in kaart sorteren",
+        "fr": "trier l'affichage dans la carte",
+        "it": "ordinamento visualizzazione nella scheda",
+        "es": "tipo de pantalla en la tarjeta",
+        "pl": "sortuj wyświetlanie w karcie",
+        "uk": "сорт відображення в картці",
+        "zh-cn": "在纸牌中排序显示"
+      },
       "2.5.10": {
         "en": "build id removed and building sourcestates improved",
         "de": "bau id entfernt und gebäude sourcestates verbessert",
@@ -80,19 +93,6 @@
         "pl": "implementuje maksymalną wartość różnicy",
         "uk": "реалізує максимальну різницю",
         "zh-cn": "执行最大差值"
-      },
-      "2.5.4": {
-        "en": "set raw common.writable = false",
-        "de": "roh gebräuchlich. writable = falsch",
-        "ru": "обычный набор. письменный = ложный",
-        "pt": "definir comum cru. writable = false",
-        "nl": "zet ruwe gewone. beschrijfbaar = onwaar",
-        "fr": "comme d'habitude. = faux",
-        "it": "set grezzo comune. writable = falso",
-        "es": "set raw common. writable = false",
-        "pl": "ustaw surowe wspólne. writable = false",
-        "uk": "встановити сирий загальний. невірний = false",
-        "zh-cn": "设置原始常见。 可写=虚假"
       }
     },
     "titleLang": {
