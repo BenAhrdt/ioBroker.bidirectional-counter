@@ -29,6 +29,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (BenAhrdt) sort display in card
+
 ### 2.5.10 (2026-04-04)
 * (BenAhrdt) build id removed and building sourcestates improved
 
