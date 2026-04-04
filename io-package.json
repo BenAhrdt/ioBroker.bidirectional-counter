@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.9",
+    "version": "2.5.10",
     "news": {
+      "2.5.10": {
+        "en": "build id removed and building sourcestates improved",
+        "de": "bau id entfernt und gebäude sourcestates verbessert",
+        "ru": "строительный идентификатор удален, а исходные состояния здания улучшены",
+        "pt": "o id de compilação removido e os estados-fonte de construção melhorados",
+        "nl": "bouw id verwijderd en bouw bronstaten verbeterd",
+        "fr": "construction id enlevée et construction sourcestates amélioré",
+        "it": "costruire id rimosso e costruire fonti migliorate",
+        "es": "construir id eliminados y construir fuentes mejorados",
+        "pl": "zbudować id usunięty i sourcestates budynku poprawiła",
+        "uk": "поліпшується id вилучені та будівельні джерела",
+        "zh-cn": "建筑 id 删除, 建筑源状态得到改善"
+      },
       "2.5.9": {
         "en": "add deviceManager",
         "de": "gerätManager hinzufügen",
@@ -80,19 +93,6 @@
         "pl": "ustaw surowe wspólne. writable = false",
         "uk": "встановити сирий загальний. невірний = false",
         "zh-cn": "设置原始常见。 可写=虚假"
-      },
-      "2.5.3": {
-        "en": "adding raw value for every counted value",
-        "de": "hinzufügen von rohwert für jeden gezählten wert",
-        "ru": "добавление сырой стоимости для каждой подсчитанной стоимости",
-        "pt": "adicionando valor bruto para cada valor contado",
-        "nl": "toegevoegde waarde voor elke getelde waarde",
-        "fr": "addition de valeur brute pour chaque valeur comptabilisée",
-        "it": "aggiungere valore grezzo per ogni valore contato",
-        "es": "añadir valor bruto por cada valor contado",
-        "pl": "wartość dodana dla każdej liczonej wartości",
-        "uk": "додаючи сире значення для кожного підрахунку значення",
-        "zh-cn": "增加每个计值的原始价值"
       }
     },
     "titleLang": {
