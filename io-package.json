@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.11",
+    "version": "2.5.12",
     "news": {
+      "2.5.12": {
+        "en": "improve id and transform back id",
+        "de": "verbessern id und transformieren zurück id",
+        "ru": "улучшение id и преобразование back id",
+        "pt": "melhorar o id e transformar o id de volta",
+        "nl": "verbeteren id en transformeren terug id",
+        "fr": "améliorer l'id et transformer l'id",
+        "it": "migliorare id e trasformare indietro id",
+        "es": "mejorar id y transformar id",
+        "pl": "poprawić id i przekształcić id powrotem",
+        "uk": "поліпшити id і трансформувати назад id",
+        "zh-cn": "改进 id 并转换回 id"
+      },
       "2.5.11": {
         "en": "sort display in card",
         "de": "sortieranzeige in der karte",
@@ -80,19 +93,6 @@
         "pl": "aktualizacji zależności",
         "uk": "оновлення залежності",
         "zh-cn": "更新依赖关系"
-      },
-      "2.5.5": {
-        "en": "implements max difference value",
-        "de": "max differenzwert implementiert",
-        "ru": "реализует значение максимальной разности",
-        "pt": "implementa o valor máximo da diferença",
-        "nl": "implementeert maximale verschilwaarde",
-        "fr": "implémente la valeur de différence maximale",
-        "it": "implementa il valore di massima differenza",
-        "es": "implementa el valor máximo de diferencia",
-        "pl": "implementuje maksymalną wartość różnicy",
-        "uk": "реалізує максимальну різницю",
-        "zh-cn": "执行最大差值"
       }
     },
     "titleLang": {
