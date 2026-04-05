@@ -30,6 +30,9 @@ The counter state will increase up from its saved value, when the shelly energy 
 	### **WORK IN PROGRESS**
 -->
 ### 2.5.12 (2026-04-04)
+* (BenAhrdt) change design of identifier and sort alphabetically
+
+### 2.5.12 (2026-04-04)
 * (BenAhrdt) improve id and transform back id
 
 ### 2.5.11 (2026-04-04)
