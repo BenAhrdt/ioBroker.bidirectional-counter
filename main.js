@@ -48,6 +48,8 @@ class BidirectionalCounter extends utils.Adapter {
      * Is called when databases are connected and adapter received configuration.
      */
     async onReady() {
+        this.subscribeForeignObjects('*');
+        this.subscribeStates('*');
         // Initialize your adapter here
         // Generate Object Store
         this.objectStore = new objectStoreClass(this);
@@ -86,9 +88,6 @@ class BidirectionalCounter extends utils.Adapter {
                 }
             }
         }
-
-        this.subscribeForeignObjects('*');
-        this.subscribeStates('*');
         this.setState(this.subscribecounterId, this.subscribecounter, true);
     }
 
@@ -136,6 +135,7 @@ class BidirectionalCounter extends utils.Adapter {
             type: 'channel',
             common: {
                 name: customInfo.channelName,
+                desc: id,
             },
             native: {},
         });
