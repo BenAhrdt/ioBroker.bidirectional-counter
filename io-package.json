@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.14",
+    "version": "2.5.15",
     "news": {
+      "2.5.15": {
+        "en": "building desc for id",
+        "de": "gebäude desc für id",
+        "ru": "создание desc для id",
+        "pt": "edifício desc para id",
+        "nl": "gebouwdesc voor id",
+        "fr": "construction pour id",
+        "it": "costruzione desc per id",
+        "es": "edificio desc para id",
+        "pl": "budynek desc dla id",
+        "uk": "будівельна дошка для id",
+        "zh-cn": "用于 id 的建筑 desc"
+      },
       "2.5.14": {
         "en": "building icon and color for inactive counters in dM card",
         "de": "icon und Farbe für inaktive Zähler in dM-Karte erstellen",
@@ -80,19 +93,6 @@
         "pl": "add deviceManager",
         "uk": "додати пристрійManager",
         "zh-cn": "添加设备管理器"
-      },
-      "2.5.8": {
-        "en": "bugfix 2.0 dependencies",
-        "de": "bugfix 2.0 abhängigkeiten",
-        "ru": "багфикс 2.0 зависимостей",
-        "pt": "dependências do bugfix 2.0",
-        "nl": "bugfix 2.0 afhankelijkheden",
-        "fr": "dépendances bugfix 2.0",
-        "it": "bugfix 2.0 dipendenze",
-        "es": "bugfix 2.0 dependencias",
-        "pl": "zależności bugfix 2.0",
-        "uk": "виправлення помилок 2.0",
-        "zh-cn": "错误修正 2.0 依赖性"
       }
     },
     "titleLang": {
