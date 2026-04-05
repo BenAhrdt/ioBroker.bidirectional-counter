@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.12",
+    "version": "2.5.13",
     "news": {
+      "2.5.13": {
+        "en": "change design of identifier and sort alphabetically",
+        "de": "design der kennung ändern und alphabetisch sortieren",
+        "ru": "изменение дизайна идентификатора и сортировки в алфавитном порядке",
+        "pt": "alterar o desenho do identificador e ordenar alfabeticamente",
+        "nl": "wijzigen van het ontwerp van identificatiecode en alfabetisch sorteren",
+        "fr": "modifier la conception de l'identificateur et trier par ordre alphabétique",
+        "it": "cambiamento design di identificatore e tipo alfabetico",
+        "es": "cambio de diseño de identificador y ordenar alfabéticamente",
+        "pl": "zmienić projekt identyfikatora i sortować alfabetycznie",
+        "uk": "змінити дизайн ідентифікатора та сортування алфавітно",
+        "zh-cn": "更改标识符和按字母排序的设计"
+      },
       "2.5.12": {
         "en": "improve id and transform back id",
         "de": "verbessern id und transformieren zurück id",
@@ -80,19 +93,6 @@
         "pl": "zależności bugfix",
         "uk": "залежність помилок",
         "zh-cn": "bugfix 依赖性"
-      },
-      "2.5.6": {
-        "en": "update dependencies",
-        "de": "aktualisierung der abhängigkeiten",
-        "ru": "обновление зависимостей",
-        "pt": "atualizar dependências",
-        "nl": "afhankelijkheden bijwerken",
-        "fr": "mettre à jour les dépendances",
-        "it": "aggiornamento dipendenze",
-        "es": "dependencias de actualización",
-        "pl": "aktualizacji zależności",
-        "uk": "оновлення залежності",
-        "zh-cn": "更新依赖关系"
       }
     },
     "titleLang": {
