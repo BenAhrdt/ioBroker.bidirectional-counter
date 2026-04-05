@@ -29,7 +29,7 @@ The counter state will increase up from its saved value, when the shelly energy 
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 2.5.14 (2026-04-05)
 * (BenAhrdt) building icon and color for inactive counters in dM card
 
 ### 2.5.13 (2026-04-05)

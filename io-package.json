@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "bidirectional-counter",
-    "version": "2.5.13",
+    "version": "2.5.14",
     "news": {
+      "2.5.14": {
+        "en": "building icon and color for inactive counters in dM card",
+        "de": "icon und Farbe für inaktive Zähler in dM-Karte erstellen",
+        "ru": "иконка и цвет для неактивных счетчиков в карте dM",
+        "pt": "ícone de construção e cor para contadores inativos no cartão dM",
+        "nl": "pictogram en kleur voor inactieve tellers in dM-kaart bouwen",
+        "fr": "icône de construction et couleur pour les compteurs inactifs dans la carte dM",
+        "it": "icona di costruzione e colore per contatori inattivi nella scheda dM",
+        "es": "icono de construcción y color para contadores inactivos en la tarjeta dM",
+        "pl": "ikona budynku i kolor dla nieaktywnych liczników w karcie dM",
+        "uk": "значок будівлі та колір для неактивних лічильників у картці dM",
+        "zh-cn": "为 dM 卡中的不活动计数器构建图标和颜色"
+      },
       "2.5.13": {
         "en": "change design of identifier and sort alphabetically",
         "de": "design der kennung ändern und alphabetisch sortieren",
@@ -80,19 +93,6 @@
         "pl": "zależności bugfix 2.0",
         "uk": "виправлення помилок 2.0",
         "zh-cn": "错误修正 2.0 依赖性"
-      },
-      "2.5.7": {
-        "en": "bugfix dependencies",
-        "de": "bugfix abhängigkeiten",
-        "ru": "багфикс зависимостей",
-        "pt": "dependências de correção de erros",
-        "nl": "bugfix afhankelijkheden",
-        "fr": "dépendances de bugfix",
-        "it": "bugfix dipendenze",
-        "es": "dependencia de bugfix",
-        "pl": "zależności bugfix",
-        "uk": "залежність помилок",
-        "zh-cn": "bugfix 依赖性"
       }
     },
     "titleLang": {
