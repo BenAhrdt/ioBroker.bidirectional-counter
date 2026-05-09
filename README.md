@@ -115,6 +115,8 @@ The counter state will increase up from its saved value, when the shelly energy 
 ### Older entries
 [here](OLD_CHANGELOG.md)
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
