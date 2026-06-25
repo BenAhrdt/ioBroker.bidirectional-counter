@@ -1,18 +1,17 @@
-
 {
-    "counterSettings": "counter settings",
-    "justTypeNumber": "Attention, only data points of type number can be selected",
+    "DeviceObject": "Device Object",
     "alowNull": "allow point of zero",
     "alowNullTooltip": "Th selection of this field, set 0 to a valid value. (in case of device reboot it might become an error).",
-    "valueName": "name",
-    "valueNameTooltip": "inset the Name of the state, which will be displayed in the channel folder later.",
+    "counterSettings": "counter settings",
     "deleteStateWithDisableText": "delete state with disable",
+    "deviceObject": "Device Object",
     "infoToCustomConfiglabel": "do configuration in custom-config of a state",
+    "justTypeNumber": "Attention, only data points of type number can be selected",
     "logFallbackAsWarning": "log fallback as warning",
     "logFallbackAsWarningTooltip": "enable this option to to log the fallback to zero and the next Value as warning",
     "maxDifference": "max difference",
     "maxDifferenceTooltip": "max difference, that might be detected. (0 for disable this function)",
-    "deviceObject": "Device Object",
-    "DeviceObject": "Device Object",
-    "sourceStates": "Source States"
+    "sourceStates": "Source States",
+    "valueName": "name",
+    "valueNameTooltip": "inset the Name of the state, which will be displayed in the channel folder later."
 }
